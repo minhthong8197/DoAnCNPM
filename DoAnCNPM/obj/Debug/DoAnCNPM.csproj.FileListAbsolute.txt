@@ -1,0 +1,25 @@
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.exe.config
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.exe
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.pdb
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csprojResolveAssemblyReference.cache
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.frmMain.resources
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.Properties.Resources.resources
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csproj.GenerateResource.Cache
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csproj.CoreCompileInputs.cache
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.exe
+C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.pdb
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csprojResolveAssemblyReference.cache
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.frmDangNhap.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FrmMain.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FrmPhanQuyen.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.Properties.Resources.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csproj.GenerateResource.Cache
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.exe.licenses
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.exe
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.pdb
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormMain.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csproj.CoreCompileInputs.cache
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.exe.config
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.exe
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.pdb
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormCover.resources
