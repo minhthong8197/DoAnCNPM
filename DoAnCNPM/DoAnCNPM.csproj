@@ -59,6 +59,12 @@
     <Compile Include="LopGiaoDien\FormCover.Designer.cs">
       <DependentUpon>FormCover.cs</DependentUpon>
     </Compile>
+    <Compile Include="LopGiaoDien\FormDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LopGiaoDien\FormDangNhap.Designer.cs">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="LopGiaoDien\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LopGiaoDien\FormCover.resx">
       <DependentUpon>FormCover.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LopGiaoDien\FormDangNhap.resx">
+      <DependentUpon>FormDangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LopGiaoDien\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
