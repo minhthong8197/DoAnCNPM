@@ -35,17 +35,19 @@
             // 
             // btnChange
             // 
+            this.btnChange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnChange.Dock = System.Windows.Forms.DockStyle.Right;
             this.btnChange.FlatAppearance.BorderSize = 0;
             this.btnChange.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnChange.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChange.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnChange.Location = new System.Drawing.Point(930, 0);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(90, 40);
             this.btnChange.TabIndex = 1;
             this.btnChange.Text = "Change";
-            this.btnChange.UseVisualStyleBackColor = true;
+            this.btnChange.UseVisualStyleBackColor = false;
             // 
             // plnChange
             // 

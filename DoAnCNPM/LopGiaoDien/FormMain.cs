@@ -7,14 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DoAnCNPM.LopGiaoDien;
 
 namespace DoAnCNPM.LopGiaoDien
 {
     public partial class FormMain : Form
     {
+        FormDangNhap dangNhap;
+
         public FormMain()
         {
             InitializeComponent();
+            dangNhap = new FormDangNhap();
+            dangNhap.FormClosing += new FormClosingEventHandler(Xulydangnhap);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -35,35 +40,71 @@ namespace DoAnCNPM.LopGiaoDien
             WindowState = FormWindowState.Minimized;
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMore_Click(object sender, EventArgs e)
         {
-            //50, 688;
             if (this.pnlLeft.Width == 250)
             {
                 this.pnlLeft.Width = 50;
                 this.btnMore.Dock = DockStyle.Left;
-                this.pnlLogo.Visible = false;
+                this.pnlLogo_Info.Visible = false;
                 this.pnlMain.Width = 1228;
             }
             else if (this.pnlLeft.Width == 50)
             {
                 this.pnlLeft.Width = 250;
                 this.btnMore.Dock = DockStyle.Right;
-                this.pnlLogo.Visible = true;
+                this.pnlLogo_Info.Visible = true;
                 this.pnlMain.Width = 1028;
             }
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
+            dangNhap.ShowDialog();
             this.pnlMain.Controls.Clear();
             FormCover Cover = new FormCover();
             this.pnlMain.Controls.Add(Cover);
+            Cover.Dock = DockStyle.Fill;
+        }
+
+        private void Xulydangnhap(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThanhVien_Click(object sender, EventArgs e)
+        {
+            if (this.pnlListThanhVien.Visible == true)
+                this.pnlListThanhVien.Visible = false;
+            else this.pnlListThanhVien.Visible = true;
+        }
+
+        private void btnChuongTrinh_Click(object sender, EventArgs e)
+        {
+            if (this.pnlListChuongTrinh.Visible == true)
+                this.pnlListChuongTrinh.Visible = false;
+            else this.pnlListChuongTrinh.Visible = true;
+        }
+
+        private void btnQuanLyKho_Click(object sender, EventArgs e)
+        {
+            if (this.pnlListQuanLyKho.Visible == true)
+                this.pnlListQuanLyKho.Visible = false;
+            else this.pnlListQuanLyKho.Visible = true;
+        }
+
+        private void btnDoiTruong_Click(object sender, EventArgs e)
+        {
+            if (this.pnlListDoiTruong.Visible == true)
+                this.pnlListDoiTruong.Visible = false;
+            else this.pnlListDoiTruong.Visible = true;
+        }
+
+        private void btnGioiThieu_Click(object sender, EventArgs e)
+        {
+            if (this.pnlListGioiThieu.Visible == true)
+                this.pnlListGioiThieu.Visible = false;
+            else this.pnlListGioiThieu.Visible = true;
         }
     }
 }

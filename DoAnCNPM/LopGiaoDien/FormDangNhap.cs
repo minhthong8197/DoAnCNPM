@@ -12,9 +12,22 @@ namespace DoAnCNPM.LopGiaoDien
 {
     public partial class FormDangNhap : Form
     {
+        string userName { get; set; }
+        string passWord { get; set; }
+
         public FormDangNhap()
         {
             InitializeComponent();
+        }
+
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnSignIn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
