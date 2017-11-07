@@ -44,9 +44,11 @@
             this.txtKhoaDV = new System.Windows.Forms.TextBox();
             this.lblNgayKetNap = new System.Windows.Forms.Label();
             this.lblKhoaDV = new System.Windows.Forms.Label();
+            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -210,19 +212,25 @@
             this.lblKhoaDV.TabIndex = 7;
             this.lblKhoaDV.Text = "Username";
             // 
-            // FrmPhanQuyen
+            // fileSystemWatcher1
+            // 
+            this.fileSystemWatcher1.EnableRaisingEvents = true;
+            this.fileSystemWatcher1.SynchronizingObject = this;
+            // 
+            // frmPhanQuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.pnl);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "FrmPhanQuyen";
+            this.Name = "frmPhanQuyen";
             this.Size = new System.Drawing.Size(800, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.pnl.ResumeLayout(false);
             this.pnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,5 +253,6 @@
         private System.Windows.Forms.TextBox txtKhoaDV;
         private System.Windows.Forms.Label lblNgayKetNap;
         private System.Windows.Forms.Label lblKhoaDV;
+        private System.IO.FileSystemWatcher fileSystemWatcher1;
     }
 }

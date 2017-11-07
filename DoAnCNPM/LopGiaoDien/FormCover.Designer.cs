@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnChange = new System.Windows.Forms.Button();
-            this.pnlChange = new System.Windows.Forms.Panel();
-            this.pnlChange.SuspendLayout();
+            this.plnChange = new System.Windows.Forms.Panel();
+            this.plnChange.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnChange
@@ -49,16 +49,16 @@
             this.btnChange.Text = "Change";
             this.btnChange.UseVisualStyleBackColor = false;
             // 
-            // pnlChange
+            // plnChange
             // 
-            this.pnlChange.BackColor = System.Drawing.Color.Transparent;
-            this.pnlChange.Controls.Add(this.btnChange);
-            this.pnlChange.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlChange.Location = new System.Drawing.Point(0, 640);
-            this.pnlChange.Margin = new System.Windows.Forms.Padding(7);
-            this.pnlChange.Name = "pnlChange";
-            this.pnlChange.Size = new System.Drawing.Size(1020, 40);
-            this.pnlChange.TabIndex = 2;
+            this.plnChange.BackColor = System.Drawing.Color.Transparent;
+            this.plnChange.Controls.Add(this.btnChange);
+            this.plnChange.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.plnChange.Location = new System.Drawing.Point(0, 640);
+            this.plnChange.Margin = new System.Windows.Forms.Padding(7);
+            this.plnChange.Name = "plnChange";
+            this.plnChange.Size = new System.Drawing.Size(1020, 40);
+            this.plnChange.TabIndex = 2;
             // 
             // FormCover
             // 
@@ -66,11 +66,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::DoAnCNPM.Properties.Resources.CTXH;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.pnlChange);
+            this.Controls.Add(this.plnChange);
             this.Name = "FormCover";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 8, 8);
             this.Size = new System.Drawing.Size(1028, 688);
-            this.pnlChange.ResumeLayout(false);
+            this.plnChange.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -78,6 +78,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnChange;
-        private System.Windows.Forms.Panel pnlChange;
+        private System.Windows.Forms.Panel plnChange;
     }
 }

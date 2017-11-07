@@ -40,35 +40,14 @@
             this.pnlLeft = new System.Windows.Forms.Panel();
             this.pnlListMenu = new System.Windows.Forms.Panel();
             this.pnlGioiThieu = new System.Windows.Forms.Panel();
-            this.pnlListGioiThieu = new System.Windows.Forms.Panel();
-            this.pnlLichSu = new System.Windows.Forms.Panel();
-            this.btnLichSu = new System.Windows.Forms.Button();
             this.btnGioiThieu = new System.Windows.Forms.Button();
             this.pnlDoiTruong = new System.Windows.Forms.Panel();
-            this.pnlListDoiTruong = new System.Windows.Forms.Panel();
-            this.pnlKetNap = new System.Windows.Forms.Panel();
-            this.btnKetNap = new System.Windows.Forms.Button();
-            this.pnlCapNhat = new System.Windows.Forms.Panel();
-            this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnDoiTruong = new System.Windows.Forms.Button();
             this.pnlQuanLyKho = new System.Windows.Forms.Panel();
-            this.pnlListQuanLyKho = new System.Windows.Forms.Panel();
-            this.pnlVatDung = new System.Windows.Forms.Panel();
-            this.btnVatDung = new System.Windows.Forms.Button();
             this.btnQuanLyKho = new System.Windows.Forms.Button();
             this.pnlChuongTrinh = new System.Windows.Forms.Panel();
-            this.pnlListChuongTrinh = new System.Windows.Forms.Panel();
-            this.pnlDsChuongTrinh = new System.Windows.Forms.Panel();
-            this.btnDsChuongTrinh = new System.Windows.Forms.Button();
             this.btnChuongTrinh = new System.Windows.Forms.Button();
             this.pnlThanhVien = new System.Windows.Forms.Panel();
-            this.pnlListThanhVien = new System.Windows.Forms.Panel();
-            this.pnlBanDieuHanh = new System.Windows.Forms.Panel();
-            this.btnBanDieuHanh = new System.Windows.Forms.Button();
-            this.pnlCongTacVien = new System.Windows.Forms.Panel();
-            this.btnCongTacVien = new System.Windows.Forms.Button();
-            this.pnlDoiVien = new System.Windows.Forms.Panel();
-            this.btnDoiVien = new System.Windows.Forms.Button();
             this.btnThanhVien = new System.Windows.Forms.Button();
             this.pnlLogoDock = new System.Windows.Forms.Panel();
             this.pnlLogo_Info = new System.Windows.Forms.Panel();
@@ -80,37 +59,55 @@
             this.btnMore = new System.Windows.Forms.Button();
             this.pnlBorderBottom = new System.Windows.Forms.Panel();
             this.pnlMain = new System.Windows.Forms.Panel();
-            this.pnlPhanQuyen = new System.Windows.Forms.Panel();
-            this.btnPhanQuyen = new System.Windows.Forms.Button();
+            this.pnlListThanhVien = new System.Windows.Forms.Panel();
+            this.btnDoiVien = new System.Windows.Forms.Button();
+            this.btnCongTacVien = new System.Windows.Forms.Button();
+            this.btnBanDieuHanh = new System.Windows.Forms.Button();
+            this.pnlListDoiTruong = new System.Windows.Forms.Panel();
+            this.pnlKetNap = new System.Windows.Forms.Panel();
+            this.btnKetNap = new System.Windows.Forms.Button();
+            this.pnlCapNhat = new System.Windows.Forms.Panel();
+            this.btnCapNhat = new System.Windows.Forms.Button();
+            this.pnlListGioiThieu = new System.Windows.Forms.Panel();
+            this.pnlLichSu = new System.Windows.Forms.Panel();
+            this.btnLichSu = new System.Windows.Forms.Button();
+            this.pnlDoiVien = new System.Windows.Forms.Panel();
+            this.pnlCongTacVien = new System.Windows.Forms.Panel();
+            this.pnlBanDieuHanh = new System.Windows.Forms.Panel();
+            this.pnlListQuanLyKho = new System.Windows.Forms.Panel();
+            this.pnlVatDung = new System.Windows.Forms.Panel();
+            this.btnVatDung = new System.Windows.Forms.Button();
+            this.pnlListChuongTrinh = new System.Windows.Forms.Panel();
+            this.pnlDsChuongTrinh = new System.Windows.Forms.Panel();
+            this.btnDsChuongTrinh = new System.Windows.Forms.Button();
             this.pnlTitleBar.SuspendLayout();
             this.pnlIcon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.pnlLeft.SuspendLayout();
             this.pnlListMenu.SuspendLayout();
             this.pnlGioiThieu.SuspendLayout();
-            this.pnlListGioiThieu.SuspendLayout();
-            this.pnlLichSu.SuspendLayout();
             this.pnlDoiTruong.SuspendLayout();
-            this.pnlListDoiTruong.SuspendLayout();
-            this.pnlKetNap.SuspendLayout();
-            this.pnlCapNhat.SuspendLayout();
             this.pnlQuanLyKho.SuspendLayout();
-            this.pnlListQuanLyKho.SuspendLayout();
-            this.pnlVatDung.SuspendLayout();
             this.pnlChuongTrinh.SuspendLayout();
-            this.pnlListChuongTrinh.SuspendLayout();
-            this.pnlDsChuongTrinh.SuspendLayout();
             this.pnlThanhVien.SuspendLayout();
-            this.pnlListThanhVien.SuspendLayout();
-            this.pnlBanDieuHanh.SuspendLayout();
-            this.pnlCongTacVien.SuspendLayout();
-            this.pnlDoiVien.SuspendLayout();
             this.pnlLogoDock.SuspendLayout();
             this.pnlLogo_Info.SuspendLayout();
             this.pnlInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.pnlBtnMore.SuspendLayout();
-            this.pnlPhanQuyen.SuspendLayout();
+            this.pnlListThanhVien.SuspendLayout();
+            this.pnlListDoiTruong.SuspendLayout();
+            this.pnlKetNap.SuspendLayout();
+            this.pnlCapNhat.SuspendLayout();
+            this.pnlListGioiThieu.SuspendLayout();
+            this.pnlLichSu.SuspendLayout();
+            this.pnlDoiVien.SuspendLayout();
+            this.pnlCongTacVien.SuspendLayout();
+            this.pnlBanDieuHanh.SuspendLayout();
+            this.pnlListQuanLyKho.SuspendLayout();
+            this.pnlVatDung.SuspendLayout();
+            this.pnlListChuongTrinh.SuspendLayout();
+            this.pnlDsChuongTrinh.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlBorderTop
@@ -254,54 +251,10 @@
             this.pnlGioiThieu.Controls.Add(this.pnlListGioiThieu);
             this.pnlGioiThieu.Controls.Add(this.btnGioiThieu);
             this.pnlGioiThieu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlGioiThieu.Location = new System.Drawing.Point(0, 440);
+            this.pnlGioiThieu.Location = new System.Drawing.Point(0, 410);
             this.pnlGioiThieu.Name = "pnlGioiThieu";
             this.pnlGioiThieu.Size = new System.Drawing.Size(274, 80);
             this.pnlGioiThieu.TabIndex = 4;
-            // 
-            // pnlListGioiThieu
-            // 
-            this.pnlListGioiThieu.AutoSize = true;
-            this.pnlListGioiThieu.Controls.Add(this.pnlLichSu);
-            this.pnlListGioiThieu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlListGioiThieu.Location = new System.Drawing.Point(0, 50);
-            this.pnlListGioiThieu.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlListGioiThieu.Name = "pnlListGioiThieu";
-            this.pnlListGioiThieu.Size = new System.Drawing.Size(274, 30);
-            this.pnlListGioiThieu.TabIndex = 8;
-            this.pnlListGioiThieu.Visible = false;
-            // 
-            // pnlLichSu
-            // 
-            this.pnlLichSu.AutoSize = true;
-            this.pnlLichSu.Controls.Add(this.btnLichSu);
-            this.pnlLichSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLichSu.Location = new System.Drawing.Point(0, 0);
-            this.pnlLichSu.Name = "pnlLichSu";
-            this.pnlLichSu.Size = new System.Drawing.Size(274, 30);
-            this.pnlLichSu.TabIndex = 0;
-            // 
-            // btnLichSu
-            // 
-            this.btnLichSu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLichSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLichSu.FlatAppearance.BorderSize = 0;
-            this.btnLichSu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnLichSu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnLichSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSu.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLichSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSu.Location = new System.Drawing.Point(0, 0);
-            this.btnLichSu.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLichSu.Name = "btnLichSu";
-            this.btnLichSu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnLichSu.Size = new System.Drawing.Size(274, 30);
-            this.btnLichSu.TabIndex = 1;
-            this.btnLichSu.Text = "LS       Lịch sử hình thành";
-            this.btnLichSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLichSu.UseVisualStyleBackColor = true;
             // 
             // btnGioiThieu
             // 
@@ -329,89 +282,13 @@
             // pnlDoiTruong
             // 
             this.pnlDoiTruong.AutoSize = true;
-            this.pnlDoiTruong.Controls.Add(this.pnlPhanQuyen);
             this.pnlDoiTruong.Controls.Add(this.pnlListDoiTruong);
             this.pnlDoiTruong.Controls.Add(this.btnDoiTruong);
             this.pnlDoiTruong.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDoiTruong.Location = new System.Drawing.Point(0, 300);
             this.pnlDoiTruong.Name = "pnlDoiTruong";
-            this.pnlDoiTruong.Size = new System.Drawing.Size(274, 140);
+            this.pnlDoiTruong.Size = new System.Drawing.Size(274, 110);
             this.pnlDoiTruong.TabIndex = 3;
-            // 
-            // pnlListDoiTruong
-            // 
-            this.pnlListDoiTruong.Controls.Add(this.pnlKetNap);
-            this.pnlListDoiTruong.Controls.Add(this.pnlCapNhat);
-            this.pnlListDoiTruong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlListDoiTruong.Location = new System.Drawing.Point(0, 50);
-            this.pnlListDoiTruong.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlListDoiTruong.Name = "pnlListDoiTruong";
-            this.pnlListDoiTruong.Size = new System.Drawing.Size(274, 60);
-            this.pnlListDoiTruong.TabIndex = 7;
-            this.pnlListDoiTruong.Visible = false;
-            // 
-            // pnlKetNap
-            // 
-            this.pnlKetNap.Controls.Add(this.btnKetNap);
-            this.pnlKetNap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlKetNap.Location = new System.Drawing.Point(0, 30);
-            this.pnlKetNap.Name = "pnlKetNap";
-            this.pnlKetNap.Size = new System.Drawing.Size(274, 30);
-            this.pnlKetNap.TabIndex = 1;
-            // 
-            // btnKetNap
-            // 
-            this.btnKetNap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKetNap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKetNap.FlatAppearance.BorderSize = 0;
-            this.btnKetNap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnKetNap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnKetNap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKetNap.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetNap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKetNap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKetNap.Location = new System.Drawing.Point(0, 0);
-            this.btnKetNap.Margin = new System.Windows.Forms.Padding(0);
-            this.btnKetNap.Name = "btnKetNap";
-            this.btnKetNap.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnKetNap.Size = new System.Drawing.Size(274, 30);
-            this.btnKetNap.TabIndex = 2;
-            this.btnKetNap.Text = "LS        Cập nhật lịch sử";
-            this.btnKetNap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKetNap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKetNap.UseVisualStyleBackColor = true;
-            // 
-            // pnlCapNhat
-            // 
-            this.pnlCapNhat.AutoSize = true;
-            this.pnlCapNhat.Controls.Add(this.btnCapNhat);
-            this.pnlCapNhat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCapNhat.Location = new System.Drawing.Point(0, 0);
-            this.pnlCapNhat.Name = "pnlCapNhat";
-            this.pnlCapNhat.Size = new System.Drawing.Size(274, 30);
-            this.pnlCapNhat.TabIndex = 0;
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCapNhat.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCapNhat.FlatAppearance.BorderSize = 0;
-            this.btnCapNhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnCapNhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCapNhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(0, 0);
-            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnCapNhat.Size = new System.Drawing.Size(274, 30);
-            this.btnCapNhat.TabIndex = 1;
-            this.btnCapNhat.Text = "KN       Kết nạp Đội viên";
-            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCapNhat.UseVisualStyleBackColor = true;
             // 
             // btnDoiTruong
             // 
@@ -447,50 +324,6 @@
             this.pnlQuanLyKho.Size = new System.Drawing.Size(274, 80);
             this.pnlQuanLyKho.TabIndex = 2;
             // 
-            // pnlListQuanLyKho
-            // 
-            this.pnlListQuanLyKho.AutoSize = true;
-            this.pnlListQuanLyKho.Controls.Add(this.pnlVatDung);
-            this.pnlListQuanLyKho.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlListQuanLyKho.Location = new System.Drawing.Point(0, 50);
-            this.pnlListQuanLyKho.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlListQuanLyKho.Name = "pnlListQuanLyKho";
-            this.pnlListQuanLyKho.Size = new System.Drawing.Size(274, 30);
-            this.pnlListQuanLyKho.TabIndex = 9;
-            this.pnlListQuanLyKho.Visible = false;
-            // 
-            // pnlVatDung
-            // 
-            this.pnlVatDung.AutoSize = true;
-            this.pnlVatDung.Controls.Add(this.btnVatDung);
-            this.pnlVatDung.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlVatDung.Location = new System.Drawing.Point(0, 0);
-            this.pnlVatDung.Name = "pnlVatDung";
-            this.pnlVatDung.Size = new System.Drawing.Size(274, 30);
-            this.pnlVatDung.TabIndex = 0;
-            // 
-            // btnVatDung
-            // 
-            this.btnVatDung.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnVatDung.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnVatDung.FlatAppearance.BorderSize = 0;
-            this.btnVatDung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnVatDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnVatDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVatDung.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVatDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnVatDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVatDung.Location = new System.Drawing.Point(0, 0);
-            this.btnVatDung.Margin = new System.Windows.Forms.Padding(0);
-            this.btnVatDung.Name = "btnVatDung";
-            this.btnVatDung.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnVatDung.Size = new System.Drawing.Size(274, 30);
-            this.btnVatDung.TabIndex = 1;
-            this.btnVatDung.Text = "VD       Quản lý vật dụng";
-            this.btnVatDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnVatDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnVatDung.UseVisualStyleBackColor = true;
-            // 
             // btnQuanLyKho
             // 
             this.btnQuanLyKho.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -525,50 +358,6 @@
             this.pnlChuongTrinh.Size = new System.Drawing.Size(274, 80);
             this.pnlChuongTrinh.TabIndex = 1;
             // 
-            // pnlListChuongTrinh
-            // 
-            this.pnlListChuongTrinh.AutoSize = true;
-            this.pnlListChuongTrinh.Controls.Add(this.pnlDsChuongTrinh);
-            this.pnlListChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlListChuongTrinh.Location = new System.Drawing.Point(0, 50);
-            this.pnlListChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlListChuongTrinh.Name = "pnlListChuongTrinh";
-            this.pnlListChuongTrinh.Size = new System.Drawing.Size(274, 30);
-            this.pnlListChuongTrinh.TabIndex = 9;
-            this.pnlListChuongTrinh.Visible = false;
-            // 
-            // pnlDsChuongTrinh
-            // 
-            this.pnlDsChuongTrinh.AutoSize = true;
-            this.pnlDsChuongTrinh.Controls.Add(this.btnDsChuongTrinh);
-            this.pnlDsChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDsChuongTrinh.Location = new System.Drawing.Point(0, 0);
-            this.pnlDsChuongTrinh.Name = "pnlDsChuongTrinh";
-            this.pnlDsChuongTrinh.Size = new System.Drawing.Size(274, 30);
-            this.pnlDsChuongTrinh.TabIndex = 0;
-            // 
-            // btnDsChuongTrinh
-            // 
-            this.btnDsChuongTrinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDsChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDsChuongTrinh.FlatAppearance.BorderSize = 0;
-            this.btnDsChuongTrinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnDsChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnDsChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDsChuongTrinh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDsChuongTrinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDsChuongTrinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDsChuongTrinh.Location = new System.Drawing.Point(0, 0);
-            this.btnDsChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDsChuongTrinh.Name = "btnDsChuongTrinh";
-            this.btnDsChuongTrinh.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnDsChuongTrinh.Size = new System.Drawing.Size(274, 30);
-            this.btnDsChuongTrinh.TabIndex = 1;
-            this.btnDsChuongTrinh.Text = "DS       Danh sách chương trình";
-            this.btnDsChuongTrinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDsChuongTrinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDsChuongTrinh.UseVisualStyleBackColor = true;
-            // 
             // btnChuongTrinh
             // 
             this.btnChuongTrinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -602,113 +391,6 @@
             this.pnlThanhVien.Name = "pnlThanhVien";
             this.pnlThanhVien.Size = new System.Drawing.Size(274, 140);
             this.pnlThanhVien.TabIndex = 0;
-            // 
-            // pnlListThanhVien
-            // 
-            this.pnlListThanhVien.Controls.Add(this.pnlBanDieuHanh);
-            this.pnlListThanhVien.Controls.Add(this.pnlCongTacVien);
-            this.pnlListThanhVien.Controls.Add(this.pnlDoiVien);
-            this.pnlListThanhVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlListThanhVien.Location = new System.Drawing.Point(0, 50);
-            this.pnlListThanhVien.Margin = new System.Windows.Forms.Padding(0);
-            this.pnlListThanhVien.Name = "pnlListThanhVien";
-            this.pnlListThanhVien.Size = new System.Drawing.Size(274, 90);
-            this.pnlListThanhVien.TabIndex = 6;
-            this.pnlListThanhVien.Visible = false;
-            // 
-            // pnlBanDieuHanh
-            // 
-            this.pnlBanDieuHanh.Controls.Add(this.btnBanDieuHanh);
-            this.pnlBanDieuHanh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlBanDieuHanh.Location = new System.Drawing.Point(0, 60);
-            this.pnlBanDieuHanh.Name = "pnlBanDieuHanh";
-            this.pnlBanDieuHanh.Size = new System.Drawing.Size(274, 30);
-            this.pnlBanDieuHanh.TabIndex = 2;
-            // 
-            // btnBanDieuHanh
-            // 
-            this.btnBanDieuHanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBanDieuHanh.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnBanDieuHanh.FlatAppearance.BorderSize = 0;
-            this.btnBanDieuHanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnBanDieuHanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnBanDieuHanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBanDieuHanh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBanDieuHanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnBanDieuHanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBanDieuHanh.Location = new System.Drawing.Point(0, 0);
-            this.btnBanDieuHanh.Margin = new System.Windows.Forms.Padding(0);
-            this.btnBanDieuHanh.Name = "btnBanDieuHanh";
-            this.btnBanDieuHanh.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnBanDieuHanh.Size = new System.Drawing.Size(274, 30);
-            this.btnBanDieuHanh.TabIndex = 2;
-            this.btnBanDieuHanh.Text = "BĐH     Ban điều hành";
-            this.btnBanDieuHanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBanDieuHanh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBanDieuHanh.UseVisualStyleBackColor = true;
-            // 
-            // pnlCongTacVien
-            // 
-            this.pnlCongTacVien.Controls.Add(this.btnCongTacVien);
-            this.pnlCongTacVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlCongTacVien.Location = new System.Drawing.Point(0, 30);
-            this.pnlCongTacVien.Name = "pnlCongTacVien";
-            this.pnlCongTacVien.Size = new System.Drawing.Size(274, 30);
-            this.pnlCongTacVien.TabIndex = 1;
-            // 
-            // btnCongTacVien
-            // 
-            this.btnCongTacVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCongTacVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnCongTacVien.FlatAppearance.BorderSize = 0;
-            this.btnCongTacVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnCongTacVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnCongTacVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCongTacVien.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCongTacVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnCongTacVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCongTacVien.Location = new System.Drawing.Point(0, 0);
-            this.btnCongTacVien.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCongTacVien.Name = "btnCongTacVien";
-            this.btnCongTacVien.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnCongTacVien.Size = new System.Drawing.Size(274, 30);
-            this.btnCongTacVien.TabIndex = 2;
-            this.btnCongTacVien.Text = "CTV      Cộng tác viên";
-            this.btnCongTacVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCongTacVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCongTacVien.UseVisualStyleBackColor = true;
-            // 
-            // pnlDoiVien
-            // 
-            this.pnlDoiVien.AutoSize = true;
-            this.pnlDoiVien.Controls.Add(this.btnDoiVien);
-            this.pnlDoiVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDoiVien.Location = new System.Drawing.Point(0, 0);
-            this.pnlDoiVien.Name = "pnlDoiVien";
-            this.pnlDoiVien.Size = new System.Drawing.Size(274, 30);
-            this.pnlDoiVien.TabIndex = 0;
-            // 
-            // btnDoiVien
-            // 
-            this.btnDoiVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDoiVien.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDoiVien.FlatAppearance.BorderSize = 0;
-            this.btnDoiVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnDoiVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnDoiVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiVien.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDoiVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnDoiVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoiVien.Location = new System.Drawing.Point(0, 0);
-            this.btnDoiVien.Margin = new System.Windows.Forms.Padding(0);
-            this.btnDoiVien.Name = "btnDoiVien";
-            this.btnDoiVien.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnDoiVien.Size = new System.Drawing.Size(274, 30);
-            this.btnDoiVien.TabIndex = 1;
-            this.btnDoiVien.Text = "ĐV       Đội viên";
-            this.btnDoiVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoiVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDoiVien.UseVisualStyleBackColor = true;
             // 
             // btnThanhVien
             // 
@@ -844,37 +526,319 @@
             this.pnlMain.Size = new System.Drawing.Size(1028, 688);
             this.pnlMain.TabIndex = 6;
             // 
-            // pnlPhanQuyen
+            // pnlListThanhVien
             // 
-            this.pnlPhanQuyen.AutoSize = true;
-            this.pnlPhanQuyen.Controls.Add(this.btnPhanQuyen);
-            this.pnlPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPhanQuyen.Location = new System.Drawing.Point(0, 110);
-            this.pnlPhanQuyen.Name = "pnlPhanQuyen";
-            this.pnlPhanQuyen.Size = new System.Drawing.Size(274, 30);
-            this.pnlPhanQuyen.TabIndex = 8;
+            this.pnlListThanhVien.Controls.Add(this.pnlBanDieuHanh);
+            this.pnlListThanhVien.Controls.Add(this.pnlCongTacVien);
+            this.pnlListThanhVien.Controls.Add(this.pnlDoiVien);
+            this.pnlListThanhVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlListThanhVien.Location = new System.Drawing.Point(0, 50);
+            this.pnlListThanhVien.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlListThanhVien.Name = "pnlListThanhVien";
+            this.pnlListThanhVien.Size = new System.Drawing.Size(274, 90);
+            this.pnlListThanhVien.TabIndex = 6;
+            this.pnlListThanhVien.Visible = false;
             // 
-            // btnPhanQuyen
+            // btnDoiVien
             // 
-            this.btnPhanQuyen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnPhanQuyen.FlatAppearance.BorderSize = 0;
-            this.btnPhanQuyen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnPhanQuyen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnPhanQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhanQuyen.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhanQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnPhanQuyen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhanQuyen.Location = new System.Drawing.Point(0, 0);
-            this.btnPhanQuyen.Margin = new System.Windows.Forms.Padding(0);
-            this.btnPhanQuyen.Name = "btnPhanQuyen";
-            this.btnPhanQuyen.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnPhanQuyen.Size = new System.Drawing.Size(274, 30);
-            this.btnPhanQuyen.TabIndex = 1;
-            this.btnPhanQuyen.Text = "PQ       Quản lý tài khoản";
-            this.btnPhanQuyen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhanQuyen.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPhanQuyen.UseVisualStyleBackColor = true;
+            this.btnDoiVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDoiVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDoiVien.FlatAppearance.BorderSize = 0;
+            this.btnDoiVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnDoiVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnDoiVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiVien.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDoiVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoiVien.Location = new System.Drawing.Point(0, 0);
+            this.btnDoiVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDoiVien.Name = "btnDoiVien";
+            this.btnDoiVien.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnDoiVien.Size = new System.Drawing.Size(274, 30);
+            this.btnDoiVien.TabIndex = 1;
+            this.btnDoiVien.Text = "ĐV       Đội viên";
+            this.btnDoiVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoiVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDoiVien.UseVisualStyleBackColor = true;
+            // 
+            // btnCongTacVien
+            // 
+            this.btnCongTacVien.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCongTacVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCongTacVien.FlatAppearance.BorderSize = 0;
+            this.btnCongTacVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnCongTacVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnCongTacVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCongTacVien.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCongTacVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCongTacVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCongTacVien.Location = new System.Drawing.Point(0, 0);
+            this.btnCongTacVien.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCongTacVien.Name = "btnCongTacVien";
+            this.btnCongTacVien.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnCongTacVien.Size = new System.Drawing.Size(274, 30);
+            this.btnCongTacVien.TabIndex = 2;
+            this.btnCongTacVien.Text = "CTV      Cộng tác viên";
+            this.btnCongTacVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCongTacVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCongTacVien.UseVisualStyleBackColor = true;
+            // 
+            // btnBanDieuHanh
+            // 
+            this.btnBanDieuHanh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBanDieuHanh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnBanDieuHanh.FlatAppearance.BorderSize = 0;
+            this.btnBanDieuHanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnBanDieuHanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnBanDieuHanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBanDieuHanh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanDieuHanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnBanDieuHanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBanDieuHanh.Location = new System.Drawing.Point(0, 0);
+            this.btnBanDieuHanh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnBanDieuHanh.Name = "btnBanDieuHanh";
+            this.btnBanDieuHanh.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnBanDieuHanh.Size = new System.Drawing.Size(274, 30);
+            this.btnBanDieuHanh.TabIndex = 2;
+            this.btnBanDieuHanh.Text = "BĐH     Ban điều hành";
+            this.btnBanDieuHanh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBanDieuHanh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBanDieuHanh.UseVisualStyleBackColor = true;
+            // 
+            // pnlListDoiTruong
+            // 
+            this.pnlListDoiTruong.Controls.Add(this.pnlKetNap);
+            this.pnlListDoiTruong.Controls.Add(this.pnlCapNhat);
+            this.pnlListDoiTruong.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlListDoiTruong.Location = new System.Drawing.Point(0, 50);
+            this.pnlListDoiTruong.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlListDoiTruong.Name = "pnlListDoiTruong";
+            this.pnlListDoiTruong.Size = new System.Drawing.Size(274, 60);
+            this.pnlListDoiTruong.TabIndex = 7;
+            this.pnlListDoiTruong.Visible = false;
+            // 
+            // pnlKetNap
+            // 
+            this.pnlKetNap.Controls.Add(this.btnKetNap);
+            this.pnlKetNap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlKetNap.Location = new System.Drawing.Point(0, 30);
+            this.pnlKetNap.Name = "pnlKetNap";
+            this.pnlKetNap.Size = new System.Drawing.Size(274, 30);
+            this.pnlKetNap.TabIndex = 1;
+            // 
+            // btnKetNap
+            // 
+            this.btnKetNap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnKetNap.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnKetNap.FlatAppearance.BorderSize = 0;
+            this.btnKetNap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnKetNap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnKetNap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKetNap.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKetNap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnKetNap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKetNap.Location = new System.Drawing.Point(0, 0);
+            this.btnKetNap.Margin = new System.Windows.Forms.Padding(0);
+            this.btnKetNap.Name = "btnKetNap";
+            this.btnKetNap.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnKetNap.Size = new System.Drawing.Size(274, 30);
+            this.btnKetNap.TabIndex = 2;
+            this.btnKetNap.Text = "LS        Cập nhật lịch sử";
+            this.btnKetNap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKetNap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnKetNap.UseVisualStyleBackColor = true;
+            // 
+            // pnlCapNhat
+            // 
+            this.pnlCapNhat.AutoSize = true;
+            this.pnlCapNhat.Controls.Add(this.btnCapNhat);
+            this.pnlCapNhat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCapNhat.Location = new System.Drawing.Point(0, 0);
+            this.pnlCapNhat.Name = "pnlCapNhat";
+            this.pnlCapNhat.Size = new System.Drawing.Size(274, 30);
+            this.pnlCapNhat.TabIndex = 0;
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCapNhat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnCapNhat.FlatAppearance.BorderSize = 0;
+            this.btnCapNhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnCapNhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCapNhat.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCapNhat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapNhat.Location = new System.Drawing.Point(0, 0);
+            this.btnCapNhat.Margin = new System.Windows.Forms.Padding(0);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnCapNhat.Size = new System.Drawing.Size(274, 30);
+            this.btnCapNhat.TabIndex = 1;
+            this.btnCapNhat.Text = "KN       Kết nạp Đội viên";
+            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCapNhat.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            // 
+            // pnlListGioiThieu
+            // 
+            this.pnlListGioiThieu.AutoSize = true;
+            this.pnlListGioiThieu.Controls.Add(this.pnlLichSu);
+            this.pnlListGioiThieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlListGioiThieu.Location = new System.Drawing.Point(0, 50);
+            this.pnlListGioiThieu.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlListGioiThieu.Name = "pnlListGioiThieu";
+            this.pnlListGioiThieu.Size = new System.Drawing.Size(274, 30);
+            this.pnlListGioiThieu.TabIndex = 8;
+            this.pnlListGioiThieu.Visible = false;
+            // 
+            // pnlLichSu
+            // 
+            this.pnlLichSu.AutoSize = true;
+            this.pnlLichSu.Controls.Add(this.btnLichSu);
+            this.pnlLichSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlLichSu.Location = new System.Drawing.Point(0, 0);
+            this.pnlLichSu.Name = "pnlLichSu";
+            this.pnlLichSu.Size = new System.Drawing.Size(274, 30);
+            this.pnlLichSu.TabIndex = 0;
+            // 
+            // btnLichSu
+            // 
+            this.btnLichSu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLichSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLichSu.FlatAppearance.BorderSize = 0;
+            this.btnLichSu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnLichSu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnLichSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLichSu.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnLichSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichSu.Location = new System.Drawing.Point(0, 0);
+            this.btnLichSu.Margin = new System.Windows.Forms.Padding(0);
+            this.btnLichSu.Name = "btnLichSu";
+            this.btnLichSu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnLichSu.Size = new System.Drawing.Size(274, 30);
+            this.btnLichSu.TabIndex = 1;
+            this.btnLichSu.Text = "LS       Lịch sử hình thành";
+            this.btnLichSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLichSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnLichSu.UseVisualStyleBackColor = true;
+            // 
+            // pnlDoiVien
+            // 
+            this.pnlDoiVien.AutoSize = true;
+            this.pnlDoiVien.Controls.Add(this.btnDoiVien);
+            this.pnlDoiVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDoiVien.Location = new System.Drawing.Point(0, 0);
+            this.pnlDoiVien.Name = "pnlDoiVien";
+            this.pnlDoiVien.Size = new System.Drawing.Size(274, 30);
+            this.pnlDoiVien.TabIndex = 0;
+            // 
+            // pnlCongTacVien
+            // 
+            this.pnlCongTacVien.Controls.Add(this.btnCongTacVien);
+            this.pnlCongTacVien.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlCongTacVien.Location = new System.Drawing.Point(0, 30);
+            this.pnlCongTacVien.Name = "pnlCongTacVien";
+            this.pnlCongTacVien.Size = new System.Drawing.Size(274, 30);
+            this.pnlCongTacVien.TabIndex = 1;
+            // 
+            // pnlBanDieuHanh
+            // 
+            this.pnlBanDieuHanh.Controls.Add(this.btnBanDieuHanh);
+            this.pnlBanDieuHanh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlBanDieuHanh.Location = new System.Drawing.Point(0, 60);
+            this.pnlBanDieuHanh.Name = "pnlBanDieuHanh";
+            this.pnlBanDieuHanh.Size = new System.Drawing.Size(274, 30);
+            this.pnlBanDieuHanh.TabIndex = 2;
+            // 
+            // pnlListQuanLyKho
+            // 
+            this.pnlListQuanLyKho.AutoSize = true;
+            this.pnlListQuanLyKho.Controls.Add(this.pnlVatDung);
+            this.pnlListQuanLyKho.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlListQuanLyKho.Location = new System.Drawing.Point(0, 50);
+            this.pnlListQuanLyKho.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlListQuanLyKho.Name = "pnlListQuanLyKho";
+            this.pnlListQuanLyKho.Size = new System.Drawing.Size(274, 30);
+            this.pnlListQuanLyKho.TabIndex = 9;
+            this.pnlListQuanLyKho.Visible = false;
+            // 
+            // pnlVatDung
+            // 
+            this.pnlVatDung.AutoSize = true;
+            this.pnlVatDung.Controls.Add(this.btnVatDung);
+            this.pnlVatDung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlVatDung.Location = new System.Drawing.Point(0, 0);
+            this.pnlVatDung.Name = "pnlVatDung";
+            this.pnlVatDung.Size = new System.Drawing.Size(274, 30);
+            this.pnlVatDung.TabIndex = 0;
+            // 
+            // btnVatDung
+            // 
+            this.btnVatDung.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnVatDung.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVatDung.FlatAppearance.BorderSize = 0;
+            this.btnVatDung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnVatDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnVatDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVatDung.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVatDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnVatDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVatDung.Location = new System.Drawing.Point(0, 0);
+            this.btnVatDung.Margin = new System.Windows.Forms.Padding(0);
+            this.btnVatDung.Name = "btnVatDung";
+            this.btnVatDung.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnVatDung.Size = new System.Drawing.Size(274, 30);
+            this.btnVatDung.TabIndex = 1;
+            this.btnVatDung.Text = "VD       Quản lý vật dụng";
+            this.btnVatDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVatDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnVatDung.UseVisualStyleBackColor = true;
+            // 
+            // pnlListChuongTrinh
+            // 
+            this.pnlListChuongTrinh.AutoSize = true;
+            this.pnlListChuongTrinh.Controls.Add(this.pnlDsChuongTrinh);
+            this.pnlListChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlListChuongTrinh.Location = new System.Drawing.Point(0, 50);
+            this.pnlListChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlListChuongTrinh.Name = "pnlListChuongTrinh";
+            this.pnlListChuongTrinh.Size = new System.Drawing.Size(274, 30);
+            this.pnlListChuongTrinh.TabIndex = 9;
+            this.pnlListChuongTrinh.Visible = false;
+            // 
+            // pnlDsChuongTrinh
+            // 
+            this.pnlDsChuongTrinh.AutoSize = true;
+            this.pnlDsChuongTrinh.Controls.Add(this.btnDsChuongTrinh);
+            this.pnlDsChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDsChuongTrinh.Location = new System.Drawing.Point(0, 0);
+            this.pnlDsChuongTrinh.Name = "pnlDsChuongTrinh";
+            this.pnlDsChuongTrinh.Size = new System.Drawing.Size(274, 30);
+            this.pnlDsChuongTrinh.TabIndex = 0;
+            // 
+            // btnDsChuongTrinh
+            // 
+            this.btnDsChuongTrinh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDsChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDsChuongTrinh.FlatAppearance.BorderSize = 0;
+            this.btnDsChuongTrinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnDsChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnDsChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDsChuongTrinh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDsChuongTrinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDsChuongTrinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDsChuongTrinh.Location = new System.Drawing.Point(0, 0);
+            this.btnDsChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDsChuongTrinh.Name = "btnDsChuongTrinh";
+            this.btnDsChuongTrinh.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnDsChuongTrinh.Size = new System.Drawing.Size(274, 30);
+            this.btnDsChuongTrinh.TabIndex = 1;
+            this.btnDsChuongTrinh.Text = "DS       Danh sách chương trình";
+            this.btnDsChuongTrinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDsChuongTrinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDsChuongTrinh.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
@@ -902,37 +866,35 @@
             this.pnlListMenu.PerformLayout();
             this.pnlGioiThieu.ResumeLayout(false);
             this.pnlGioiThieu.PerformLayout();
-            this.pnlListGioiThieu.ResumeLayout(false);
-            this.pnlListGioiThieu.PerformLayout();
-            this.pnlLichSu.ResumeLayout(false);
             this.pnlDoiTruong.ResumeLayout(false);
-            this.pnlDoiTruong.PerformLayout();
-            this.pnlListDoiTruong.ResumeLayout(false);
-            this.pnlListDoiTruong.PerformLayout();
-            this.pnlKetNap.ResumeLayout(false);
-            this.pnlCapNhat.ResumeLayout(false);
             this.pnlQuanLyKho.ResumeLayout(false);
             this.pnlQuanLyKho.PerformLayout();
-            this.pnlListQuanLyKho.ResumeLayout(false);
-            this.pnlListQuanLyKho.PerformLayout();
-            this.pnlVatDung.ResumeLayout(false);
             this.pnlChuongTrinh.ResumeLayout(false);
             this.pnlChuongTrinh.PerformLayout();
-            this.pnlListChuongTrinh.ResumeLayout(false);
-            this.pnlListChuongTrinh.PerformLayout();
-            this.pnlDsChuongTrinh.ResumeLayout(false);
             this.pnlThanhVien.ResumeLayout(false);
-            this.pnlListThanhVien.ResumeLayout(false);
-            this.pnlListThanhVien.PerformLayout();
-            this.pnlBanDieuHanh.ResumeLayout(false);
-            this.pnlCongTacVien.ResumeLayout(false);
-            this.pnlDoiVien.ResumeLayout(false);
             this.pnlLogoDock.ResumeLayout(false);
             this.pnlLogo_Info.ResumeLayout(false);
             this.pnlInfo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.pnlBtnMore.ResumeLayout(false);
-            this.pnlPhanQuyen.ResumeLayout(false);
+            this.pnlListThanhVien.ResumeLayout(false);
+            this.pnlListThanhVien.PerformLayout();
+            this.pnlListDoiTruong.ResumeLayout(false);
+            this.pnlListDoiTruong.PerformLayout();
+            this.pnlKetNap.ResumeLayout(false);
+            this.pnlCapNhat.ResumeLayout(false);
+            this.pnlListGioiThieu.ResumeLayout(false);
+            this.pnlListGioiThieu.PerformLayout();
+            this.pnlLichSu.ResumeLayout(false);
+            this.pnlDoiVien.ResumeLayout(false);
+            this.pnlCongTacVien.ResumeLayout(false);
+            this.pnlBanDieuHanh.ResumeLayout(false);
+            this.pnlListQuanLyKho.ResumeLayout(false);
+            this.pnlListQuanLyKho.PerformLayout();
+            this.pnlVatDung.ResumeLayout(false);
+            this.pnlListChuongTrinh.ResumeLayout(false);
+            this.pnlListChuongTrinh.PerformLayout();
+            this.pnlDsChuongTrinh.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -991,7 +953,5 @@
         private System.Windows.Forms.Panel pnlBanDieuHanh;
         private System.Windows.Forms.Panel pnlCongTacVien;
         private System.Windows.Forms.Panel pnlDoiVien;
-        private System.Windows.Forms.Panel pnlPhanQuyen;
-        private System.Windows.Forms.Button btnPhanQuyen;
     }
 }

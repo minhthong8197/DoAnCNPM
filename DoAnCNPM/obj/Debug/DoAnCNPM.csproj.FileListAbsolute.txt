@@ -22,4 +22,3 @@ D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.exe
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.pdb
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormCover.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormDangNhap.resources
-D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormPhanQuyen.resources

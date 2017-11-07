@@ -8,10 +8,9 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>DoAnCNPM</RootNamespace>
     <AssemblyName>DoAnCNPM</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -66,9 +71,23 @@
     <Compile Include="LopGiaoDien\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="LopGiaoDien\FormPhanQuyen.cs" />
     <Compile Include="LopGiaoDien\FormPhanQuyen.Designer.cs">
       <DependentUpon>FormPhanQuyen.cs</DependentUpon>
+=======
+    <Compile Include="LopGiaoDien\FrmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LopGiaoDien\FrmDangNhap.Designer.cs">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LopGiaoDien\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LopGiaoDien\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+>>>>>>> parent of 5e1718c... dang lam layout
     </Compile>
     <Compile Include="LopGiaoDien\FrmPhanQuyen.cs">
       <SubType>UserControl</SubType>
@@ -87,8 +106,16 @@
     <EmbeddedResource Include="LopGiaoDien\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="LopGiaoDien\FormPhanQuyen.resx">
       <DependentUpon>FormPhanQuyen.cs</DependentUpon>
+=======
+    <EmbeddedResource Include="LopGiaoDien\FrmDangNhap.resx">
+      <DependentUpon>FrmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LopGiaoDien\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+>>>>>>> parent of 5e1718c... dang lam layout
     </EmbeddedResource>
     <EmbeddedResource Include="LopGiaoDien\FrmPhanQuyen.resx">
       <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
