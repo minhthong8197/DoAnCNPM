@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DoAnCNPM.LopGiaoDien
 {
-    public partial class FormPhanQuyen : Form
+    public partial class FormPhanQuyen : UserControl
     {
         public FormPhanQuyen()
         {

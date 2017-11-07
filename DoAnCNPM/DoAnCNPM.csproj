@@ -66,23 +66,9 @@
     <Compile Include="LopGiaoDien\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="LopGiaoDien\FormPhanQuyen.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="LopGiaoDien\FormPhanQuyen.cs" />
     <Compile Include="LopGiaoDien\FormPhanQuyen.Designer.cs">
       <DependentUpon>FormPhanQuyen.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmDangNhap.Designer.cs">
-      <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="LopGiaoDien\FrmPhanQuyen.cs">
       <SubType>UserControl</SubType>
@@ -103,12 +89,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LopGiaoDien\FormPhanQuyen.resx">
       <DependentUpon>FormPhanQuyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LopGiaoDien\FrmDangNhap.resx">
-      <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LopGiaoDien\FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LopGiaoDien\FrmPhanQuyen.resx">
       <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
