@@ -9,6 +9,8 @@ C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csproj.
 C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.exe
 C:\Users\minhthong8197\source\repos\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.pdb
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csprojResolveAssemblyReference.cache
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.frmDangNhap.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FrmMain.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FrmPhanQuyen.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.Properties.Resources.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.csproj.GenerateResource.Cache
@@ -22,3 +24,4 @@ D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.exe
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\bin\Debug\DoAnCNPM.pdb
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormCover.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormDangNhap.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormPhanQuyen.resources

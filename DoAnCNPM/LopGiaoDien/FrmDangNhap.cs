@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DoAnCNPM.LopGiaoDien
 {
-    public partial class FormPhanQuyen : Form
+    public partial class frmDangNhap : Form
     {
-        public FormPhanQuyen()
+        public frmDangNhap()
         {
             InitializeComponent();
         }

@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace DoAnCNPM.LopGiaoDien
 {
-    public partial class FormPhanQuyen : Form
+    public partial class FrmMain : Form
     {
-        public FormPhanQuyen()
+        public FrmMain()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
