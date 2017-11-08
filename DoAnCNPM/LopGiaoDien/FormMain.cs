@@ -62,9 +62,9 @@ namespace DoAnCNPM.LopGiaoDien
         {
             dangNhap.ShowDialog();
             this.pnlMain.Controls.Clear();
-            FormCover Cover = new FormCover();
-            this.pnlMain.Controls.Add(Cover);
-            Cover.Dock = DockStyle.Fill;
+            FormCover cover = new FormCover();
+            this.pnlMain.Controls.Add(cover);
+            cover.Dock = DockStyle.Fill;
         }
 
         private void Xulydangnhap(object sender, EventArgs e)
@@ -105,6 +105,22 @@ namespace DoAnCNPM.LopGiaoDien
             if (this.pnlListGioiThieu.Visible == true)
                 this.pnlListGioiThieu.Visible = false;
             else this.pnlListGioiThieu.Visible = true;
+        }
+
+        private void btnPhanQuyen_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormPhanQuyen phanQuyen = new FormPhanQuyen();
+            this.pnlMain.Controls.Add(phanQuyen);
+            phanQuyen.Dock = DockStyle.Fill;
+        }
+
+        private void btnBanDieuHanh_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormBanDieuHanh banDieuHanh = new FormBanDieuHanh();
+            this.pnlMain.Controls.Add(banDieuHanh);
+            banDieuHanh.Dock = DockStyle.Fill;
         }
     }
 }

@@ -48,6 +48,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LopGiaoDien\FormBanDieuHanh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LopGiaoDien\FormBanDieuHanh.Designer.cs">
+      <DependentUpon>FormBanDieuHanh.cs</DependentUpon>
+    </Compile>
     <Compile Include="LopGiaoDien\FormCover.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -67,31 +73,16 @@
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
     <Compile Include="LopGiaoDien\FormPhanQuyen.cs">
-      <SubType>Form</SubType>
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="LopGiaoDien\FormPhanQuyen.Designer.cs">
       <DependentUpon>FormPhanQuyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="LopGiaoDien\FrmDangNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmDangNhap.Designer.cs">
-      <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmMain.Designer.cs">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmPhanQuyen.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="LopGiaoDien\FrmPhanQuyen.Designer.cs">
-      <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LopGiaoDien\FormBanDieuHanh.resx">
+      <DependentUpon>FormBanDieuHanh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LopGiaoDien\FormCover.resx">
       <DependentUpon>FormCover.cs</DependentUpon>
     </EmbeddedResource>
@@ -103,15 +94,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LopGiaoDien\FormPhanQuyen.resx">
       <DependentUpon>FormPhanQuyen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LopGiaoDien\FrmDangNhap.resx">
-      <DependentUpon>FrmDangNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LopGiaoDien\FrmMain.resx">
-      <DependentUpon>FrmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LopGiaoDien\FrmPhanQuyen.resx">
-      <DependentUpon>FrmPhanQuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -196,6 +178,48 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon avatar 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon huy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon luu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon sua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon them.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon xoa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon huy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon luu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon sua1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon them 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon xoa1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon them 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon xoa2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon huy2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon sua2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

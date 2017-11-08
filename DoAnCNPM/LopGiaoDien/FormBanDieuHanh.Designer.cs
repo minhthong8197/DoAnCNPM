@@ -1,6 +1,6 @@
 ﻿namespace DoAnCNPM.LopGiaoDien
 {
-    partial class FormPhanQuyen
+    partial class FormBanDieuHanh
     {
         /// <summary> 
         /// Required designer variable.
@@ -34,30 +34,30 @@
             this.dgvMain = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.TableLayoutPanel();
             this.pnlTextBox = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlVaiTro = new System.Windows.Forms.TableLayoutPanel();
-            this.lblVaiTro = new System.Windows.Forms.Label();
-            this.cbxVaiTro = new System.Windows.Forms.ComboBox();
-            this.pnlPassword = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
-            this.pnlUsername = new System.Windows.Forms.TableLayoutPanel();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pnlMaSV = new System.Windows.Forms.TableLayoutPanel();
+            this.lblMaSV = new System.Windows.Forms.Label();
+            this.txtMaSV = new System.Windows.Forms.TextBox();
+            this.pnlNhiemKy = new System.Windows.Forms.TableLayoutPanel();
+            this.cbxNhiemKy = new System.Windows.Forms.ComboBox();
             this.pnlManageTools = new System.Windows.Forms.TableLayoutPanel();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.pnlChucVu = new System.Windows.Forms.TableLayoutPanel();
+            this.lblChucVu = new System.Windows.Forms.Label();
+            this.cbxChucVu = new System.Windows.Forms.ComboBox();
+            this.lblNhiemKy = new System.Windows.Forms.LinkLabel();
             this.pnlPhanQuyen.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlTextBox.SuspendLayout();
-            this.pnlVaiTro.SuspendLayout();
-            this.pnlPassword.SuspendLayout();
-            this.pnlUsername.SuspendLayout();
+            this.pnlMaSV.SuspendLayout();
+            this.pnlNhiemKy.SuspendLayout();
             this.pnlManageTools.SuspendLayout();
+            this.pnlChucVu.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlPhanQuyen
@@ -76,7 +76,7 @@
             this.pnlPhanQuyen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlPhanQuyen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
             this.pnlPhanQuyen.Size = new System.Drawing.Size(1028, 688);
-            this.pnlPhanQuyen.TabIndex = 1;
+            this.pnlPhanQuyen.TabIndex = 2;
             // 
             // pnlFooter
             // 
@@ -99,7 +99,7 @@
             this.lblFooter.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.lblFooter.Size = new System.Drawing.Size(1028, 30);
             this.lblFooter.TabIndex = 0;
-            this.lblFooter.Text = "Quản lý tải khoản";
+            this.lblFooter.Text = "Ban điều hành";
             this.lblFooter.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dgvMain
@@ -116,7 +116,7 @@
             this.pnlTop.ColumnCount = 3;
             this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 340F));
             this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 0F));
-            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 682F));
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlTop.Controls.Add(this.pnlTextBox, 0, 0);
             this.pnlTop.Controls.Add(this.pnlManageTools, 2, 0);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -131,9 +131,9 @@
             // 
             this.pnlTextBox.ColumnCount = 1;
             this.pnlTextBox.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlTextBox.Controls.Add(this.pnlPassword, 0, 1);
-            this.pnlTextBox.Controls.Add(this.pnlUsername, 0, 0);
-            this.pnlTextBox.Controls.Add(this.pnlVaiTro, 0, 2);
+            this.pnlTextBox.Controls.Add(this.pnlMaSV, 0, 0);
+            this.pnlTextBox.Controls.Add(this.pnlNhiemKy, 0, 2);
+            this.pnlTextBox.Controls.Add(this.pnlChucVu, 0, 1);
             this.pnlTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTextBox.Location = new System.Drawing.Point(3, 3);
             this.pnlTextBox.Name = "pnlTextBox";
@@ -144,121 +144,71 @@
             this.pnlTextBox.Size = new System.Drawing.Size(334, 258);
             this.pnlTextBox.TabIndex = 2;
             // 
-            // pnlVaiTro
+            // pnlMaSV
             // 
-            this.pnlVaiTro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlVaiTro.AutoSize = true;
-            this.pnlVaiTro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlVaiTro.ColumnCount = 2;
-            this.pnlVaiTro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlVaiTro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlVaiTro.Controls.Add(this.lblVaiTro, 0, 0);
-            this.pnlVaiTro.Controls.Add(this.cbxVaiTro, 1, 0);
-            this.pnlVaiTro.Location = new System.Drawing.Point(9, 195);
-            this.pnlVaiTro.Name = "pnlVaiTro";
-            this.pnlVaiTro.RowCount = 1;
-            this.pnlVaiTro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlVaiTro.Size = new System.Drawing.Size(316, 38);
-            this.pnlVaiTro.TabIndex = 2;
+            this.pnlMaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlMaSV.AutoSize = true;
+            this.pnlMaSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlMaSV.ColumnCount = 2;
+            this.pnlMaSV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 140F));
+            this.pnlMaSV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlMaSV.Controls.Add(this.lblMaSV, 0, 0);
+            this.pnlMaSV.Controls.Add(this.txtMaSV, 1, 0);
+            this.pnlMaSV.Location = new System.Drawing.Point(9, 31);
+            this.pnlMaSV.Name = "pnlMaSV";
+            this.pnlMaSV.RowCount = 1;
+            this.pnlMaSV.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlMaSV.Size = new System.Drawing.Size(316, 23);
+            this.pnlMaSV.TabIndex = 2;
             // 
-            // lblVaiTro
+            // lblMaSV
             // 
-            this.lblVaiTro.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblVaiTro.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblVaiTro.ForeColor = System.Drawing.Color.White;
-            this.lblVaiTro.Location = new System.Drawing.Point(3, 0);
-            this.lblVaiTro.Name = "lblVaiTro";
-            this.lblVaiTro.Size = new System.Drawing.Size(70, 38);
-            this.lblVaiTro.TabIndex = 0;
-            this.lblVaiTro.Text = "Vai trò";
-            this.lblVaiTro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMaSV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMaSV.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblMaSV.ForeColor = System.Drawing.Color.White;
+            this.lblMaSV.Location = new System.Drawing.Point(3, 0);
+            this.lblMaSV.Name = "lblMaSV";
+            this.lblMaSV.Size = new System.Drawing.Size(134, 23);
+            this.lblMaSV.TabIndex = 0;
+            this.lblMaSV.Text = "Mã sinh viên";
+            this.lblMaSV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cbxVaiTro
+            // txtMaSV
             // 
-            this.cbxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxVaiTro.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.cbxVaiTro.FormattingEnabled = true;
-            this.cbxVaiTro.Location = new System.Drawing.Point(76, 3);
-            this.cbxVaiTro.Margin = new System.Windows.Forms.Padding(0);
-            this.cbxVaiTro.Name = "cbxVaiTro";
-            this.cbxVaiTro.Size = new System.Drawing.Size(240, 32);
-            this.cbxVaiTro.TabIndex = 1;
+            this.txtMaSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaSV.Location = new System.Drawing.Point(140, 1);
+            this.txtMaSV.Margin = new System.Windows.Forms.Padding(0);
+            this.txtMaSV.Name = "txtMaSV";
+            this.txtMaSV.Size = new System.Drawing.Size(176, 20);
+            this.txtMaSV.TabIndex = 1;
             // 
-            // pnlPassword
+            // pnlNhiemKy
             // 
-            this.pnlPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlPassword.AutoSize = true;
-            this.pnlPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlPassword.ColumnCount = 2;
-            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlPassword.Controls.Add(this.lblPassword, 0, 0);
-            this.pnlPassword.Controls.Add(this.txtPassword, 1, 0);
-            this.pnlPassword.Location = new System.Drawing.Point(9, 116);
-            this.pnlPassword.Name = "pnlPassword";
-            this.pnlPassword.RowCount = 1;
-            this.pnlPassword.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlPassword.Size = new System.Drawing.Size(316, 23);
-            this.pnlPassword.TabIndex = 2;
+            this.pnlNhiemKy.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlNhiemKy.AutoSize = true;
+            this.pnlNhiemKy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlNhiemKy.ColumnCount = 2;
+            this.pnlNhiemKy.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.pnlNhiemKy.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlNhiemKy.Controls.Add(this.cbxNhiemKy, 1, 0);
+            this.pnlNhiemKy.Controls.Add(this.lblNhiemKy, 0, 0);
+            this.pnlNhiemKy.Location = new System.Drawing.Point(9, 198);
+            this.pnlNhiemKy.Name = "pnlNhiemKy";
+            this.pnlNhiemKy.RowCount = 1;
+            this.pnlNhiemKy.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlNhiemKy.Size = new System.Drawing.Size(315, 32);
+            this.pnlNhiemKy.TabIndex = 2;
             // 
-            // lblPassword
+            // cbxNhiemKy
             // 
-            this.lblPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPassword.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(3, 0);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(100, 23);
-            this.lblPassword.TabIndex = 0;
-            this.lblPassword.Text = "Password";
-            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(106, 1);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(0);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(210, 20);
-            this.txtPassword.TabIndex = 1;
-            // 
-            // pnlUsername
-            // 
-            this.pnlUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlUsername.AutoSize = true;
-            this.pnlUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlUsername.ColumnCount = 2;
-            this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlUsername.Controls.Add(this.lblUsername, 0, 0);
-            this.pnlUsername.Controls.Add(this.txtUsername, 1, 0);
-            this.pnlUsername.Location = new System.Drawing.Point(9, 31);
-            this.pnlUsername.Name = "pnlUsername";
-            this.pnlUsername.RowCount = 1;
-            this.pnlUsername.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlUsername.Size = new System.Drawing.Size(316, 23);
-            this.pnlUsername.TabIndex = 2;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblUsername.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(3, 0);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(100, 23);
-            this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "Username";
-            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsername.Location = new System.Drawing.Point(106, 1);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(210, 20);
-            this.txtUsername.TabIndex = 1;
+            this.cbxNhiemKy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxNhiemKy.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.cbxNhiemKy.FormattingEnabled = true;
+            this.cbxNhiemKy.Location = new System.Drawing.Point(100, 0);
+            this.cbxNhiemKy.Margin = new System.Windows.Forms.Padding(0);
+            this.cbxNhiemKy.Name = "cbxNhiemKy";
+            this.cbxNhiemKy.Size = new System.Drawing.Size(215, 32);
+            this.cbxNhiemKy.TabIndex = 1;
             // 
             // pnlManageTools
             // 
@@ -382,13 +332,71 @@
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
             // 
-            // FormPhanQuyen
+            // pnlChucVu
+            // 
+            this.pnlChucVu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlChucVu.AutoSize = true;
+            this.pnlChucVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlChucVu.ColumnCount = 2;
+            this.pnlChucVu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
+            this.pnlChucVu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlChucVu.Controls.Add(this.lblChucVu, 0, 0);
+            this.pnlChucVu.Controls.Add(this.cbxChucVu, 1, 0);
+            this.pnlChucVu.Location = new System.Drawing.Point(8, 108);
+            this.pnlChucVu.Name = "pnlChucVu";
+            this.pnlChucVu.RowCount = 1;
+            this.pnlChucVu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlChucVu.Size = new System.Drawing.Size(317, 38);
+            this.pnlChucVu.TabIndex = 2;
+            // 
+            // lblChucVu
+            // 
+            this.lblChucVu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblChucVu.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblChucVu.ForeColor = System.Drawing.Color.White;
+            this.lblChucVu.Location = new System.Drawing.Point(3, 0);
+            this.lblChucVu.Name = "lblChucVu";
+            this.lblChucVu.Size = new System.Drawing.Size(94, 38);
+            this.lblChucVu.TabIndex = 0;
+            this.lblChucVu.Text = "Chức vụ";
+            this.lblChucVu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // cbxChucVu
+            // 
+            this.cbxChucVu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxChucVu.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.cbxChucVu.FormattingEnabled = true;
+            this.cbxChucVu.Location = new System.Drawing.Point(100, 3);
+            this.cbxChucVu.Margin = new System.Windows.Forms.Padding(0);
+            this.cbxChucVu.Name = "cbxChucVu";
+            this.cbxChucVu.Size = new System.Drawing.Size(217, 32);
+            this.cbxChucVu.TabIndex = 1;
+            // 
+            // lblNhiemKy
+            // 
+            this.lblNhiemKy.ActiveLinkColor = System.Drawing.Color.White;
+            this.lblNhiemKy.AutoSize = true;
+            this.lblNhiemKy.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblNhiemKy.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblNhiemKy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblNhiemKy.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lblNhiemKy.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.lblNhiemKy.Location = new System.Drawing.Point(3, 0);
+            this.lblNhiemKy.Name = "lblNhiemKy";
+            this.lblNhiemKy.Size = new System.Drawing.Size(94, 32);
+            this.lblNhiemKy.TabIndex = 2;
+            this.lblNhiemKy.TabStop = true;
+            this.lblNhiemKy.Text = "Nhiệm kỳ";
+            this.lblNhiemKy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblNhiemKy.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            // 
+            // FormBanDieuHanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.Controls.Add(this.pnlPhanQuyen);
-            this.Name = "FormPhanQuyen";
+            this.Name = "FormBanDieuHanh";
             this.Size = new System.Drawing.Size(1028, 688);
             this.pnlPhanQuyen.ResumeLayout(false);
             this.pnlFooter.ResumeLayout(false);
@@ -396,12 +404,12 @@
             this.pnlTop.ResumeLayout(false);
             this.pnlTextBox.ResumeLayout(false);
             this.pnlTextBox.PerformLayout();
-            this.pnlVaiTro.ResumeLayout(false);
-            this.pnlPassword.ResumeLayout(false);
-            this.pnlPassword.PerformLayout();
-            this.pnlUsername.ResumeLayout(false);
-            this.pnlUsername.PerformLayout();
+            this.pnlMaSV.ResumeLayout(false);
+            this.pnlMaSV.PerformLayout();
+            this.pnlNhiemKy.ResumeLayout(false);
+            this.pnlNhiemKy.PerformLayout();
             this.pnlManageTools.ResumeLayout(false);
+            this.pnlChucVu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -414,20 +422,20 @@
         private System.Windows.Forms.DataGridView dgvMain;
         private System.Windows.Forms.TableLayoutPanel pnlTop;
         private System.Windows.Forms.TableLayoutPanel pnlTextBox;
-        private System.Windows.Forms.TableLayoutPanel pnlVaiTro;
-        private System.Windows.Forms.Label lblVaiTro;
-        private System.Windows.Forms.ComboBox cbxVaiTro;
-        private System.Windows.Forms.TableLayoutPanel pnlPassword;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.TableLayoutPanel pnlUsername;
-        private System.Windows.Forms.Label lblUsername;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TableLayoutPanel pnlMaSV;
+        private System.Windows.Forms.Label lblMaSV;
+        private System.Windows.Forms.TextBox txtMaSV;
+        private System.Windows.Forms.TableLayoutPanel pnlNhiemKy;
+        private System.Windows.Forms.ComboBox cbxNhiemKy;
         private System.Windows.Forms.TableLayoutPanel pnlManageTools;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.TableLayoutPanel pnlChucVu;
+        private System.Windows.Forms.Label lblChucVu;
+        private System.Windows.Forms.ComboBox cbxChucVu;
+        private System.Windows.Forms.LinkLabel lblNhiemKy;
     }
 }

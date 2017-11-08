@@ -118,61 +118,103 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CTXH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CTXH.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon info" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon info1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon member1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon member.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn close" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon leader1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon leader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon avatar 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon avatar 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon event" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon event1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon leader" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon leader1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn more" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon warehouse1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon warehouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon event1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon event.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon warehouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon warehouse1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="logo CTXH" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logo CTXH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon info1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icon info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="btn maximize" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\btn maximize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icon huy1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon huy1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon member" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon member1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icon warehouse" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon warehouse1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon avatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon avatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon xoa2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon xoa2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon sua" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon sua.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn maximize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn maximize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon xoa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon xoa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CTXH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CTXH.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon leader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon leader1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon event1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon event.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon info1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon them 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon them 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icon avatar 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icon avatar 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon info1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon luu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon luu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon warehouse1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon warehouse.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn minimize" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn minimize.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon leader1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon leader.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon event" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon event1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon luu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon luu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon xoa1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon xoa1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon sua1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon sua1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon them" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon them.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon them 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon them 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon huy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon huy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="logo CTXH" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo CTXH.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon avatar 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon avatar 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon member1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon member.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn more" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\btn more.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon huy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon huy2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon sua2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icon sua2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
