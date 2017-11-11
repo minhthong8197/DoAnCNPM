@@ -23,3 +23,7 @@ D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormC
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormDangNhap.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormPhanQuyen.resources
 D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormBanDieuHanh.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormDoiVien.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormCongTacVien.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormChuongTrinh.resources
+D:\Study\Visual workspace\DoAnCNPM\DoAnCNPM\obj\Debug\DoAnCNPM.LopGiaoDien.FormQuanLyKho.resources

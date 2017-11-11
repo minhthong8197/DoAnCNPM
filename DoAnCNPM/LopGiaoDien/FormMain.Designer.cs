@@ -417,6 +417,7 @@
             this.btnVatDung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVatDung.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVatDung.UseVisualStyleBackColor = true;
+            this.btnVatDung.Click += new System.EventHandler(this.btnVatDung_Click);
             // 
             // pnlChuongTrinh
             // 
@@ -472,6 +473,7 @@
             this.btnDsChuongTrinh.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDsChuongTrinh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDsChuongTrinh.UseVisualStyleBackColor = true;
+            this.btnDsChuongTrinh.Click += new System.EventHandler(this.btnDsChuongTrinh_Click);
             // 
             // pnlThanhVien
             // 
@@ -559,6 +561,7 @@
             this.btnCongTacVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCongTacVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCongTacVien.UseVisualStyleBackColor = true;
+            this.btnCongTacVien.Click += new System.EventHandler(this.btnCongTacVien_Click);
             // 
             // pnlDoiVien
             // 
@@ -591,6 +594,7 @@
             this.btnDoiVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoiVien.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDoiVien.UseVisualStyleBackColor = true;
+            this.btnDoiVien.Click += new System.EventHandler(this.btnDoiVien_Click);
             // 
             // pnlLogoDock
             // 

@@ -122,5 +122,37 @@ namespace DoAnCNPM.LopGiaoDien
             this.pnlMain.Controls.Add(banDieuHanh);
             banDieuHanh.Dock = DockStyle.Fill;
         }
+
+        private void btnDoiVien_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormDoiVien doiVien = new FormDoiVien();
+            this.pnlMain.Controls.Add(doiVien);
+            doiVien.Dock = DockStyle.Fill;
+        }
+
+        private void btnDsChuongTrinh_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormChuongTrinh formChuongTrinh = new FormChuongTrinh();
+            this.pnlMain.Controls.Add(formChuongTrinh);
+            formChuongTrinh.Dock = DockStyle.Fill;
+        }
+
+        private void btnVatDung_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormQuanLyKho formQuanLyKho = new FormQuanLyKho();
+            this.pnlMain.Controls.Add(formQuanLyKho);
+            formQuanLyKho.Dock = DockStyle.Fill;
+        }
+
+        private void btnCongTacVien_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            FormCongTacVien formCongTacVien = new FormCongTacVien();
+            this.pnlMain.Controls.Add(formCongTacVien);
+            formCongTacVien.Dock = DockStyle.Fill;
+        }
     }
 }
