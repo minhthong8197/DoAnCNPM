@@ -34,35 +34,35 @@
             this.dgvMain = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.TableLayoutPanel();
             this.pnlTextBox = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlMaSV = new System.Windows.Forms.TableLayoutPanel();
-            this.lblMaSV = new System.Windows.Forms.Label();
-            this.txtMaSV = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pnlMaVD = new System.Windows.Forms.TableLayoutPanel();
+            this.lblMaVD = new System.Windows.Forms.Label();
+            this.txtMaVD = new System.Windows.Forms.TextBox();
+            this.pnlTenVD = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTenVD = new System.Windows.Forms.Label();
+            this.txtTenVD = new System.Windows.Forms.TextBox();
+            this.pnlSoLuong = new System.Windows.Forms.TableLayoutPanel();
+            this.lblSoLuong = new System.Windows.Forms.Label();
+            this.nmrSoLuong = new System.Windows.Forms.NumericUpDown();
+            this.pnlDonVi = new System.Windows.Forms.TableLayoutPanel();
+            this.lblDonVi = new System.Windows.Forms.Label();
+            this.txtDonVi = new System.Windows.Forms.TextBox();
             this.pnlManageTools = new System.Windows.Forms.TableLayoutPanel();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.pnlPhanQuyen.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlTextBox.SuspendLayout();
-            this.pnlMaSV.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
-            this.tableLayoutPanel3.SuspendLayout();
+            this.pnlMaVD.SuspendLayout();
+            this.pnlTenVD.SuspendLayout();
+            this.pnlSoLuong.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrSoLuong)).BeginInit();
+            this.pnlDonVi.SuspendLayout();
             this.pnlManageTools.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlPhanQuyen
@@ -136,10 +136,10 @@
             // 
             this.pnlTextBox.ColumnCount = 1;
             this.pnlTextBox.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlTextBox.Controls.Add(this.pnlMaSV, 0, 0);
-            this.pnlTextBox.Controls.Add(this.tableLayoutPanel1, 0, 1);
-            this.pnlTextBox.Controls.Add(this.tableLayoutPanel2, 0, 2);
-            this.pnlTextBox.Controls.Add(this.tableLayoutPanel3, 0, 3);
+            this.pnlTextBox.Controls.Add(this.pnlMaVD, 0, 0);
+            this.pnlTextBox.Controls.Add(this.pnlTenVD, 0, 1);
+            this.pnlTextBox.Controls.Add(this.pnlSoLuong, 0, 2);
+            this.pnlTextBox.Controls.Add(this.pnlDonVi, 0, 3);
             this.pnlTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTextBox.Location = new System.Drawing.Point(3, 3);
             this.pnlTextBox.Name = "pnlTextBox";
@@ -151,152 +151,163 @@
             this.pnlTextBox.Size = new System.Drawing.Size(334, 258);
             this.pnlTextBox.TabIndex = 2;
             // 
-            // pnlMaSV
+            // pnlMaVD
             // 
-            this.pnlMaSV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlMaSV.AutoSize = true;
-            this.pnlMaSV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlMaSV.ColumnCount = 2;
-            this.pnlMaSV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlMaSV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlMaSV.Controls.Add(this.lblMaSV, 0, 0);
-            this.pnlMaSV.Controls.Add(this.txtMaSV, 1, 0);
-            this.pnlMaSV.Location = new System.Drawing.Point(9, 20);
-            this.pnlMaSV.Name = "pnlMaSV";
-            this.pnlMaSV.RowCount = 1;
-            this.pnlMaSV.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlMaSV.Size = new System.Drawing.Size(316, 24);
-            this.pnlMaSV.TabIndex = 2;
+            this.pnlMaVD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlMaVD.AutoSize = true;
+            this.pnlMaVD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlMaVD.ColumnCount = 2;
+            this.pnlMaVD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlMaVD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlMaVD.Controls.Add(this.lblMaVD, 0, 0);
+            this.pnlMaVD.Controls.Add(this.txtMaVD, 1, 0);
+            this.pnlMaVD.Location = new System.Drawing.Point(9, 20);
+            this.pnlMaVD.Name = "pnlMaVD";
+            this.pnlMaVD.RowCount = 1;
+            this.pnlMaVD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlMaVD.Size = new System.Drawing.Size(316, 24);
+            this.pnlMaVD.TabIndex = 2;
             // 
-            // lblMaSV
+            // lblMaVD
             // 
-            this.lblMaSV.AutoSize = true;
-            this.lblMaSV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblMaSV.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblMaSV.ForeColor = System.Drawing.Color.White;
-            this.lblMaSV.Location = new System.Drawing.Point(3, 0);
-            this.lblMaSV.Name = "lblMaSV";
-            this.lblMaSV.Size = new System.Drawing.Size(117, 24);
-            this.lblMaSV.TabIndex = 0;
-            this.lblMaSV.Text = "Mã vật dụng";
-            this.lblMaSV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblMaVD.AutoSize = true;
+            this.lblMaVD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblMaVD.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblMaVD.ForeColor = System.Drawing.Color.White;
+            this.lblMaVD.Location = new System.Drawing.Point(3, 0);
+            this.lblMaVD.Name = "lblMaVD";
+            this.lblMaVD.Size = new System.Drawing.Size(117, 24);
+            this.lblMaVD.TabIndex = 0;
+            this.lblMaVD.Text = "Mã vật dụng";
+            this.lblMaVD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtMaSV
+            // txtMaVD
             // 
-            this.txtMaSV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaSV.Location = new System.Drawing.Point(123, 2);
-            this.txtMaSV.Margin = new System.Windows.Forms.Padding(0);
-            this.txtMaSV.Name = "txtMaSV";
-            this.txtMaSV.Size = new System.Drawing.Size(193, 20);
-            this.txtMaSV.TabIndex = 1;
+            this.txtMaVD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaVD.Location = new System.Drawing.Point(123, 2);
+            this.txtMaVD.Margin = new System.Windows.Forms.Padding(0);
+            this.txtMaVD.Name = "txtMaVD";
+            this.txtMaVD.Size = new System.Drawing.Size(193, 20);
+            this.txtMaVD.TabIndex = 1;
             // 
-            // tableLayoutPanel1
+            // pnlTenVD
             // 
-            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel1.AutoSize = true;
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(9, 84);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(315, 24);
-            this.tableLayoutPanel1.TabIndex = 2;
+            this.pnlTenVD.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlTenVD.AutoSize = true;
+            this.pnlTenVD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlTenVD.ColumnCount = 2;
+            this.pnlTenVD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlTenVD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlTenVD.Controls.Add(this.lblTenVD, 0, 0);
+            this.pnlTenVD.Controls.Add(this.txtTenVD, 1, 0);
+            this.pnlTenVD.Location = new System.Drawing.Point(9, 84);
+            this.pnlTenVD.Name = "pnlTenVD";
+            this.pnlTenVD.RowCount = 1;
+            this.pnlTenVD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlTenVD.Size = new System.Drawing.Size(315, 24);
+            this.pnlTenVD.TabIndex = 2;
             // 
-            // label1
+            // lblTenVD
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 24);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tên vật dụng";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTenVD.AutoSize = true;
+            this.lblTenVD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTenVD.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTenVD.ForeColor = System.Drawing.Color.White;
+            this.lblTenVD.Location = new System.Drawing.Point(3, 0);
+            this.lblTenVD.Name = "lblTenVD";
+            this.lblTenVD.Size = new System.Drawing.Size(123, 24);
+            this.lblTenVD.TabIndex = 0;
+            this.lblTenVD.Text = "Tên vật dụng";
+            this.lblTenVD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // txtTenVD
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(129, 2);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
-            this.textBox1.TabIndex = 1;
+            this.txtTenVD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenVD.Location = new System.Drawing.Point(129, 2);
+            this.txtTenVD.Margin = new System.Windows.Forms.Padding(0);
+            this.txtTenVD.Name = "txtTenVD";
+            this.txtTenVD.Size = new System.Drawing.Size(186, 20);
+            this.txtTenVD.TabIndex = 1;
             // 
-            // tableLayoutPanel2
+            // pnlSoLuong
             // 
-            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel2.AutoSize = true;
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.numericUpDown1, 1, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 145);
-            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 1;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(315, 30);
-            this.tableLayoutPanel2.TabIndex = 2;
+            this.pnlSoLuong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlSoLuong.AutoSize = true;
+            this.pnlSoLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlSoLuong.ColumnCount = 2;
+            this.pnlSoLuong.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlSoLuong.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlSoLuong.Controls.Add(this.lblSoLuong, 0, 0);
+            this.pnlSoLuong.Controls.Add(this.nmrSoLuong, 1, 0);
+            this.pnlSoLuong.Location = new System.Drawing.Point(9, 145);
+            this.pnlSoLuong.Name = "pnlSoLuong";
+            this.pnlSoLuong.RowCount = 1;
+            this.pnlSoLuong.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlSoLuong.Size = new System.Drawing.Size(315, 30);
+            this.pnlSoLuong.TabIndex = 2;
             // 
-            // label2
+            // lblSoLuong
             // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 30);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Số lượng";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblSoLuong.AutoSize = true;
+            this.lblSoLuong.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblSoLuong.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblSoLuong.ForeColor = System.Drawing.Color.White;
+            this.lblSoLuong.Location = new System.Drawing.Point(3, 0);
+            this.lblSoLuong.Name = "lblSoLuong";
+            this.lblSoLuong.Size = new System.Drawing.Size(88, 30);
+            this.lblSoLuong.TabIndex = 0;
+            this.lblSoLuong.Text = "Số lượng";
+            this.lblSoLuong.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // tableLayoutPanel3
+            // nmrSoLuong
             // 
-            this.tableLayoutPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel3.AutoSize = true;
-            this.tableLayoutPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tableLayoutPanel3.ColumnCount = 2;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Controls.Add(this.label3, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.textBox2, 1, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(9, 213);
-            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
-            this.tableLayoutPanel3.RowCount = 1;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(316, 24);
-            this.tableLayoutPanel3.TabIndex = 2;
+            this.nmrSoLuong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.nmrSoLuong.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.nmrSoLuong.Location = new System.Drawing.Point(94, 0);
+            this.nmrSoLuong.Margin = new System.Windows.Forms.Padding(0);
+            this.nmrSoLuong.Name = "nmrSoLuong";
+            this.nmrSoLuong.Size = new System.Drawing.Size(221, 30);
+            this.nmrSoLuong.TabIndex = 1;
+            this.nmrSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label3
+            // pnlDonVi
             // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(3, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 24);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Đơn vị";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pnlDonVi.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlDonVi.AutoSize = true;
+            this.pnlDonVi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlDonVi.ColumnCount = 2;
+            this.pnlDonVi.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlDonVi.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlDonVi.Controls.Add(this.lblDonVi, 0, 0);
+            this.pnlDonVi.Controls.Add(this.txtDonVi, 1, 0);
+            this.pnlDonVi.Location = new System.Drawing.Point(9, 213);
+            this.pnlDonVi.Name = "pnlDonVi";
+            this.pnlDonVi.RowCount = 1;
+            this.pnlDonVi.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlDonVi.Size = new System.Drawing.Size(316, 24);
+            this.pnlDonVi.TabIndex = 2;
             // 
-            // textBox2
+            // lblDonVi
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(71, 2);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(245, 20);
-            this.textBox2.TabIndex = 1;
+            this.lblDonVi.AutoSize = true;
+            this.lblDonVi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblDonVi.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblDonVi.ForeColor = System.Drawing.Color.White;
+            this.lblDonVi.Location = new System.Drawing.Point(3, 0);
+            this.lblDonVi.Name = "lblDonVi";
+            this.lblDonVi.Size = new System.Drawing.Size(65, 24);
+            this.lblDonVi.TabIndex = 0;
+            this.lblDonVi.Text = "Đơn vị";
+            this.lblDonVi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtDonVi
+            // 
+            this.txtDonVi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtDonVi.Location = new System.Drawing.Point(71, 2);
+            this.txtDonVi.Margin = new System.Windows.Forms.Padding(0);
+            this.txtDonVi.Name = "txtDonVi";
+            this.txtDonVi.Size = new System.Drawing.Size(245, 20);
+            this.txtDonVi.TabIndex = 1;
             // 
             // pnlManageTools
             // 
@@ -420,17 +431,6 @@
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown1.Location = new System.Drawing.Point(94, 0);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(0);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(221, 30);
-            this.numericUpDown1.TabIndex = 1;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // FormQuanLyKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -445,16 +445,16 @@
             this.pnlTop.ResumeLayout(false);
             this.pnlTextBox.ResumeLayout(false);
             this.pnlTextBox.PerformLayout();
-            this.pnlMaSV.ResumeLayout(false);
-            this.pnlMaSV.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
-            this.tableLayoutPanel3.ResumeLayout(false);
-            this.tableLayoutPanel3.PerformLayout();
+            this.pnlMaVD.ResumeLayout(false);
+            this.pnlMaVD.PerformLayout();
+            this.pnlTenVD.ResumeLayout(false);
+            this.pnlTenVD.PerformLayout();
+            this.pnlSoLuong.ResumeLayout(false);
+            this.pnlSoLuong.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nmrSoLuong)).EndInit();
+            this.pnlDonVi.ResumeLayout(false);
+            this.pnlDonVi.PerformLayout();
             this.pnlManageTools.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -467,18 +467,18 @@
         private System.Windows.Forms.DataGridView dgvMain;
         private System.Windows.Forms.TableLayoutPanel pnlTop;
         private System.Windows.Forms.TableLayoutPanel pnlTextBox;
-        private System.Windows.Forms.TableLayoutPanel pnlMaSV;
-        private System.Windows.Forms.Label lblMaSV;
-        private System.Windows.Forms.TextBox txtMaSV;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TableLayoutPanel pnlMaVD;
+        private System.Windows.Forms.Label lblMaVD;
+        private System.Windows.Forms.TextBox txtMaVD;
+        private System.Windows.Forms.TableLayoutPanel pnlTenVD;
+        private System.Windows.Forms.Label lblTenVD;
+        private System.Windows.Forms.TextBox txtTenVD;
+        private System.Windows.Forms.TableLayoutPanel pnlSoLuong;
+        private System.Windows.Forms.Label lblSoLuong;
+        private System.Windows.Forms.NumericUpDown nmrSoLuong;
+        private System.Windows.Forms.TableLayoutPanel pnlDonVi;
+        private System.Windows.Forms.Label lblDonVi;
+        private System.Windows.Forms.TextBox txtDonVi;
         private System.Windows.Forms.TableLayoutPanel pnlManageTools;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnHuy;

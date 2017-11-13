@@ -16,5 +16,9 @@ namespace DoAnCNPM.LopGiaoDien
         {
             InitializeComponent();
         }
+        //System.DateTime time = System.DateTime.Today;
+        //int date = time.Day;
+        //int month = time.Month;
+        //int year = time.Year;
     }
 }

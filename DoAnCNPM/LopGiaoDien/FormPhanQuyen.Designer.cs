@@ -34,15 +34,15 @@
             this.dgvMain = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.TableLayoutPanel();
             this.pnlTextBox = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlVaiTro = new System.Windows.Forms.TableLayoutPanel();
-            this.lblVaiTro = new System.Windows.Forms.Label();
-            this.cbxVaiTro = new System.Windows.Forms.ComboBox();
             this.pnlPassword = new System.Windows.Forms.TableLayoutPanel();
             this.lblPassword = new System.Windows.Forms.Label();
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.pnlUsername = new System.Windows.Forms.TableLayoutPanel();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
+            this.pnlVaiTro = new System.Windows.Forms.TableLayoutPanel();
+            this.lblVaiTro = new System.Windows.Forms.Label();
+            this.cbxVaiTro = new System.Windows.Forms.ComboBox();
             this.pnlManageTools = new System.Windows.Forms.TableLayoutPanel();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
@@ -54,9 +54,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.pnlTop.SuspendLayout();
             this.pnlTextBox.SuspendLayout();
-            this.pnlVaiTro.SuspendLayout();
             this.pnlPassword.SuspendLayout();
             this.pnlUsername.SuspendLayout();
+            this.pnlVaiTro.SuspendLayout();
             this.pnlManageTools.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,6 +144,84 @@
             this.pnlTextBox.Size = new System.Drawing.Size(334, 258);
             this.pnlTextBox.TabIndex = 2;
             // 
+            // pnlPassword
+            // 
+            this.pnlPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlPassword.AutoSize = true;
+            this.pnlPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlPassword.ColumnCount = 2;
+            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlPassword.Controls.Add(this.lblPassword, 0, 0);
+            this.pnlPassword.Controls.Add(this.txtPassword, 1, 0);
+            this.pnlPassword.Location = new System.Drawing.Point(9, 115);
+            this.pnlPassword.Name = "pnlPassword";
+            this.pnlPassword.RowCount = 1;
+            this.pnlPassword.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlPassword.Size = new System.Drawing.Size(316, 24);
+            this.pnlPassword.TabIndex = 2;
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblPassword.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblPassword.ForeColor = System.Drawing.Color.White;
+            this.lblPassword.Location = new System.Drawing.Point(3, 0);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(95, 24);
+            this.lblPassword.TabIndex = 0;
+            this.lblPassword.Text = "Password";
+            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtPassword.Location = new System.Drawing.Point(101, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(0);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(215, 20);
+            this.txtPassword.TabIndex = 1;
+            // 
+            // pnlUsername
+            // 
+            this.pnlUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pnlUsername.AutoSize = true;
+            this.pnlUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlUsername.ColumnCount = 2;
+            this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlUsername.Controls.Add(this.lblUsername, 0, 0);
+            this.pnlUsername.Controls.Add(this.txtUsername, 1, 0);
+            this.pnlUsername.Location = new System.Drawing.Point(8, 30);
+            this.pnlUsername.Name = "pnlUsername";
+            this.pnlUsername.RowCount = 1;
+            this.pnlUsername.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlUsername.Size = new System.Drawing.Size(317, 24);
+            this.pnlUsername.TabIndex = 2;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblUsername.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblUsername.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Location = new System.Drawing.Point(3, 0);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(97, 24);
+            this.lblUsername.TabIndex = 0;
+            this.lblUsername.Text = "Username";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtUsername
+            // 
+            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtUsername.Location = new System.Drawing.Point(103, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(214, 20);
+            this.txtUsername.TabIndex = 1;
+            // 
             // pnlVaiTro
             // 
             this.pnlVaiTro.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -151,24 +229,25 @@
             this.pnlVaiTro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.pnlVaiTro.ColumnCount = 2;
             this.pnlVaiTro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlVaiTro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlVaiTro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlVaiTro.Controls.Add(this.lblVaiTro, 0, 0);
             this.pnlVaiTro.Controls.Add(this.cbxVaiTro, 1, 0);
-            this.pnlVaiTro.Location = new System.Drawing.Point(9, 195);
+            this.pnlVaiTro.Location = new System.Drawing.Point(9, 198);
             this.pnlVaiTro.Name = "pnlVaiTro";
             this.pnlVaiTro.RowCount = 1;
             this.pnlVaiTro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlVaiTro.Size = new System.Drawing.Size(316, 38);
+            this.pnlVaiTro.Size = new System.Drawing.Size(316, 32);
             this.pnlVaiTro.TabIndex = 2;
             // 
             // lblVaiTro
             // 
+            this.lblVaiTro.AutoSize = true;
             this.lblVaiTro.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblVaiTro.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblVaiTro.ForeColor = System.Drawing.Color.White;
             this.lblVaiTro.Location = new System.Drawing.Point(3, 0);
             this.lblVaiTro.Name = "lblVaiTro";
-            this.lblVaiTro.Size = new System.Drawing.Size(70, 38);
+            this.lblVaiTro.Size = new System.Drawing.Size(66, 32);
             this.lblVaiTro.TabIndex = 0;
             this.lblVaiTro.Text = "Vai trò";
             this.lblVaiTro.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -178,87 +257,11 @@
             this.cbxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxVaiTro.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
             this.cbxVaiTro.FormattingEnabled = true;
-            this.cbxVaiTro.Location = new System.Drawing.Point(76, 3);
+            this.cbxVaiTro.Location = new System.Drawing.Point(72, 0);
             this.cbxVaiTro.Margin = new System.Windows.Forms.Padding(0);
             this.cbxVaiTro.Name = "cbxVaiTro";
-            this.cbxVaiTro.Size = new System.Drawing.Size(240, 32);
+            this.cbxVaiTro.Size = new System.Drawing.Size(244, 32);
             this.cbxVaiTro.TabIndex = 1;
-            // 
-            // pnlPassword
-            // 
-            this.pnlPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlPassword.AutoSize = true;
-            this.pnlPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlPassword.ColumnCount = 2;
-            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlPassword.Controls.Add(this.lblPassword, 0, 0);
-            this.pnlPassword.Controls.Add(this.txtPassword, 1, 0);
-            this.pnlPassword.Location = new System.Drawing.Point(9, 116);
-            this.pnlPassword.Name = "pnlPassword";
-            this.pnlPassword.RowCount = 1;
-            this.pnlPassword.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlPassword.Size = new System.Drawing.Size(316, 23);
-            this.pnlPassword.TabIndex = 2;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPassword.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(3, 0);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(100, 23);
-            this.lblPassword.TabIndex = 0;
-            this.lblPassword.Text = "Password";
-            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(106, 1);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(0);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(210, 20);
-            this.txtPassword.TabIndex = 1;
-            // 
-            // pnlUsername
-            // 
-            this.pnlUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlUsername.AutoSize = true;
-            this.pnlUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlUsername.ColumnCount = 2;
-            this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlUsername.Controls.Add(this.lblUsername, 0, 0);
-            this.pnlUsername.Controls.Add(this.txtUsername, 1, 0);
-            this.pnlUsername.Location = new System.Drawing.Point(9, 31);
-            this.pnlUsername.Name = "pnlUsername";
-            this.pnlUsername.RowCount = 1;
-            this.pnlUsername.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlUsername.Size = new System.Drawing.Size(316, 23);
-            this.pnlUsername.TabIndex = 2;
-            // 
-            // lblUsername
-            // 
-            this.lblUsername.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblUsername.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblUsername.ForeColor = System.Drawing.Color.White;
-            this.lblUsername.Location = new System.Drawing.Point(3, 0);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(100, 23);
-            this.lblUsername.TabIndex = 0;
-            this.lblUsername.Text = "Username";
-            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsername.Location = new System.Drawing.Point(106, 1);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(210, 20);
-            this.txtUsername.TabIndex = 1;
             // 
             // pnlManageTools
             // 
@@ -396,11 +399,12 @@
             this.pnlTop.ResumeLayout(false);
             this.pnlTextBox.ResumeLayout(false);
             this.pnlTextBox.PerformLayout();
-            this.pnlVaiTro.ResumeLayout(false);
             this.pnlPassword.ResumeLayout(false);
             this.pnlPassword.PerformLayout();
             this.pnlUsername.ResumeLayout(false);
             this.pnlUsername.PerformLayout();
+            this.pnlVaiTro.ResumeLayout(false);
+            this.pnlVaiTro.PerformLayout();
             this.pnlManageTools.ResumeLayout(false);
             this.ResumeLayout(false);
 
