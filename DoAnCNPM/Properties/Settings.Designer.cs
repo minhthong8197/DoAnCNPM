@@ -22,5 +22,26 @@ namespace DoAnCNPM.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTHONGPC\\SQLEXPRESS;Initial Catalog=DoiCTXH;User ID=nhom11")]
+        public string DoiCTXHConnectionString {
+            get {
+                return ((string)(this["DoiCTXHConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTHONGPC\\SQLEXPRESS;Initial Catalog=DoiCTXH;User ID=nhom11;Passwor" +
+            "d=nhom11")]
+        public string DoiCTXHConnectionString1 {
+            get {
+                return ((string)(this["DoiCTXHConnectionString1"]));
+            }
+        }
     }
 }

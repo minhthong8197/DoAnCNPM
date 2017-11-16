@@ -49,15 +49,23 @@
             this.pnlQueQuan = new System.Windows.Forms.TableLayoutPanel();
             this.lblQueQuan = new System.Windows.Forms.Label();
             this.cbxQueQuan = new System.Windows.Forms.ComboBox();
-            this.pnlKhoaKetNap = new System.Windows.Forms.TableLayoutPanel();
-            this.cbxKhoaKetNap = new System.Windows.Forms.ComboBox();
-            this.lblKhoaKetNap = new System.Windows.Forms.LinkLabel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.pnlManageTools = new System.Windows.Forms.TableLayoutPanel();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnCapNhat = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pnlPhanQuyen.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
@@ -68,8 +76,11 @@
             this.pnlHoTen.SuspendLayout();
             this.pnlNgaySinh.SuspendLayout();
             this.pnlQueQuan.SuspendLayout();
-            this.pnlKhoaKetNap.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.pnlManageTools.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlPhanQuyen
@@ -125,12 +136,15 @@
             // 
             // pnlTop
             // 
-            this.pnlTop.ColumnCount = 3;
+            this.pnlTop.ColumnCount = 5;
             this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 340F));
             this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 0F));
-            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
             this.pnlTop.Controls.Add(this.pnlTextBox, 0, 0);
             this.pnlTop.Controls.Add(this.pnlManageTools, 2, 0);
+            this.pnlTop.Controls.Add(this.tableLayoutPanel3, 3, 0);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTop.Location = new System.Drawing.Point(3, 3);
             this.pnlTop.Name = "pnlTop";
@@ -148,17 +162,19 @@
             this.pnlTextBox.Controls.Add(this.pnlHoTen, 0, 1);
             this.pnlTextBox.Controls.Add(this.pnlNgaySinh, 0, 2);
             this.pnlTextBox.Controls.Add(this.pnlQueQuan, 0, 3);
-            this.pnlTextBox.Controls.Add(this.pnlKhoaKetNap, 0, 5);
+            this.pnlTextBox.Controls.Add(this.tableLayoutPanel2, 0, 6);
+            this.pnlTextBox.Controls.Add(this.tableLayoutPanel4, 0, 5);
             this.pnlTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTextBox.Location = new System.Drawing.Point(3, 3);
             this.pnlTextBox.Name = "pnlTextBox";
-            this.pnlTextBox.RowCount = 6;
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66224F));
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.65887F));
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.65888F));
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.65888F));
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.65888F));
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.70225F));
+            this.pnlTextBox.RowCount = 7;
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.pnlTextBox.Size = new System.Drawing.Size(334, 258);
             this.pnlTextBox.TabIndex = 2;
             // 
@@ -172,11 +188,11 @@
             this.pnlChucVu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlChucVu.Controls.Add(this.lblChucVu, 0, 0);
             this.pnlChucVu.Controls.Add(this.cbxChucVu, 1, 0);
-            this.pnlChucVu.Location = new System.Drawing.Point(8, 173);
+            this.pnlChucVu.Location = new System.Drawing.Point(8, 147);
             this.pnlChucVu.Name = "pnlChucVu";
             this.pnlChucVu.RowCount = 1;
             this.pnlChucVu.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlChucVu.Size = new System.Drawing.Size(317, 32);
+            this.pnlChucVu.Size = new System.Drawing.Size(317, 30);
             this.pnlChucVu.TabIndex = 2;
             // 
             // lblChucVu
@@ -187,7 +203,7 @@
             this.lblChucVu.ForeColor = System.Drawing.Color.White;
             this.lblChucVu.Location = new System.Drawing.Point(3, 0);
             this.lblChucVu.Name = "lblChucVu";
-            this.lblChucVu.Size = new System.Drawing.Size(66, 32);
+            this.lblChucVu.Size = new System.Drawing.Size(66, 30);
             this.lblChucVu.TabIndex = 0;
             this.lblChucVu.Text = "Ngành";
             this.lblChucVu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -213,11 +229,11 @@
             this.pnlMaSV.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlMaSV.Controls.Add(this.lblMaSV, 0, 0);
             this.pnlMaSV.Controls.Add(this.txtMaSV, 1, 0);
-            this.pnlMaSV.Location = new System.Drawing.Point(9, 9);
+            this.pnlMaSV.Location = new System.Drawing.Point(8, 6);
             this.pnlMaSV.Name = "pnlMaSV";
             this.pnlMaSV.RowCount = 1;
             this.pnlMaSV.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlMaSV.Size = new System.Drawing.Size(316, 24);
+            this.pnlMaSV.Size = new System.Drawing.Size(317, 24);
             this.pnlMaSV.TabIndex = 2;
             // 
             // lblMaSV
@@ -239,7 +255,7 @@
             this.txtMaSV.Location = new System.Drawing.Point(126, 2);
             this.txtMaSV.Margin = new System.Windows.Forms.Padding(0);
             this.txtMaSV.Name = "txtMaSV";
-            this.txtMaSV.Size = new System.Drawing.Size(190, 20);
+            this.txtMaSV.Size = new System.Drawing.Size(191, 20);
             this.txtMaSV.TabIndex = 1;
             // 
             // pnlHoTen
@@ -252,7 +268,7 @@
             this.pnlHoTen.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlHoTen.Controls.Add(this.lblHoTen, 0, 0);
             this.pnlHoTen.Controls.Add(this.txtHoTen, 1, 0);
-            this.pnlHoTen.Location = new System.Drawing.Point(8, 51);
+            this.pnlHoTen.Location = new System.Drawing.Point(8, 42);
             this.pnlHoTen.Name = "pnlHoTen";
             this.pnlHoTen.RowCount = 1;
             this.pnlHoTen.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -291,7 +307,7 @@
             this.pnlNgaySinh.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlNgaySinh.Controls.Add(this.lblNgaySinh, 0, 0);
             this.pnlNgaySinh.Controls.Add(this.dtpNgaySinh, 1, 0);
-            this.pnlNgaySinh.Location = new System.Drawing.Point(8, 90);
+            this.pnlNgaySinh.Location = new System.Drawing.Point(8, 75);
             this.pnlNgaySinh.Name = "pnlNgaySinh";
             this.pnlNgaySinh.RowCount = 1;
             this.pnlNgaySinh.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
@@ -332,11 +348,11 @@
             this.pnlQueQuan.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlQueQuan.Controls.Add(this.lblQueQuan, 0, 0);
             this.pnlQueQuan.Controls.Add(this.cbxQueQuan, 1, 0);
-            this.pnlQueQuan.Location = new System.Drawing.Point(9, 131);
+            this.pnlQueQuan.Location = new System.Drawing.Point(8, 111);
             this.pnlQueQuan.Name = "pnlQueQuan";
             this.pnlQueQuan.RowCount = 1;
             this.pnlQueQuan.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlQueQuan.Size = new System.Drawing.Size(316, 32);
+            this.pnlQueQuan.Size = new System.Drawing.Size(317, 30);
             this.pnlQueQuan.TabIndex = 2;
             // 
             // lblQueQuan
@@ -347,7 +363,7 @@
             this.lblQueQuan.ForeColor = System.Drawing.Color.White;
             this.lblQueQuan.Location = new System.Drawing.Point(3, 0);
             this.lblQueQuan.Name = "lblQueQuan";
-            this.lblQueQuan.Size = new System.Drawing.Size(92, 32);
+            this.lblQueQuan.Size = new System.Drawing.Size(92, 30);
             this.lblQueQuan.TabIndex = 0;
             this.lblQueQuan.Text = "Quê quán";
             this.lblQueQuan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -360,54 +376,90 @@
             this.cbxQueQuan.Location = new System.Drawing.Point(98, 0);
             this.cbxQueQuan.Margin = new System.Windows.Forms.Padding(0);
             this.cbxQueQuan.Name = "cbxQueQuan";
-            this.cbxQueQuan.Size = new System.Drawing.Size(218, 32);
+            this.cbxQueQuan.Size = new System.Drawing.Size(219, 32);
             this.cbxQueQuan.TabIndex = 1;
             // 
-            // pnlKhoaKetNap
+            // tableLayoutPanel2
             // 
-            this.pnlKhoaKetNap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlKhoaKetNap.AutoSize = true;
-            this.pnlKhoaKetNap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlKhoaKetNap.ColumnCount = 2;
-            this.pnlKhoaKetNap.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlKhoaKetNap.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlKhoaKetNap.Controls.Add(this.cbxKhoaKetNap, 1, 0);
-            this.pnlKhoaKetNap.Controls.Add(this.lblKhoaKetNap, 0, 0);
-            this.pnlKhoaKetNap.Location = new System.Drawing.Point(8, 218);
-            this.pnlKhoaKetNap.Name = "pnlKhoaKetNap";
-            this.pnlKhoaKetNap.RowCount = 1;
-            this.pnlKhoaKetNap.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlKhoaKetNap.Size = new System.Drawing.Size(317, 32);
-            this.pnlKhoaKetNap.TabIndex = 2;
+            this.tableLayoutPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel2.AutoSize = true;
+            this.tableLayoutPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.comboBox2, 1, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(8, 221);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(317, 32);
+            this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // cbxKhoaKetNap
+            // label1
             // 
-            this.cbxKhoaKetNap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.cbxKhoaKetNap.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.cbxKhoaKetNap.FormattingEnabled = true;
-            this.cbxKhoaKetNap.Location = new System.Drawing.Point(128, 0);
-            this.cbxKhoaKetNap.Margin = new System.Windows.Forms.Padding(0);
-            this.cbxKhoaKetNap.Name = "cbxKhoaKetNap";
-            this.cbxKhoaKetNap.Size = new System.Drawing.Size(189, 32);
-            this.cbxKhoaKetNap.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(131, 32);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Khóa Đội Viên";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblKhoaKetNap
+            // comboBox2
             // 
-            this.lblKhoaKetNap.ActiveLinkColor = System.Drawing.Color.White;
-            this.lblKhoaKetNap.AutoSize = true;
-            this.lblKhoaKetNap.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblKhoaKetNap.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblKhoaKetNap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblKhoaKetNap.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lblKhoaKetNap.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblKhoaKetNap.Location = new System.Drawing.Point(3, 0);
-            this.lblKhoaKetNap.Name = "lblKhoaKetNap";
-            this.lblKhoaKetNap.Size = new System.Drawing.Size(122, 32);
-            this.lblKhoaKetNap.TabIndex = 2;
-            this.lblKhoaKetNap.TabStop = true;
-            this.lblKhoaKetNap.Text = "Khóa kết nạp";
-            this.lblKhoaKetNap.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblKhoaKetNap.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.comboBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(137, 0);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(180, 32);
+            this.comboBox2.TabIndex = 1;
+            // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel4.AutoSize = true;
+            this.tableLayoutPanel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel4.ColumnCount = 2;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Controls.Add(this.label2, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.comboBox3, 1, 0);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(8, 183);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 1;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(317, 30);
+            this.tableLayoutPanel4.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(3, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 30);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Khoa";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox3.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(60, 0);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(257, 32);
+            this.comboBox3.TabIndex = 1;
             // 
             // pnlManageTools
             // 
@@ -531,6 +583,83 @@
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
             // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.AutoSize = true;
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.tableLayoutPanel1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.button1, 0, 0);
+            this.tableLayoutPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(509, 3);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(260, 258);
+            this.tableLayoutPanel3.TabIndex = 3;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.tableLayoutPanel1.AutoSize = true;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Controls.Add(this.comboBox1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.linkLabel1, 0, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 223);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 1;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(254, 32);
+            this.tableLayoutPanel1.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBox1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(131, 0);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(123, 32);
+            this.comboBox1.TabIndex = 1;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkLabel1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.linkLabel1.Location = new System.Drawing.Point(3, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(125, 32);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Xem khóa ĐV";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::DoAnCNPM.Properties.Resources.thedoivien;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(254, 214);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormDoiVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -539,10 +668,12 @@
             this.Controls.Add(this.pnlPhanQuyen);
             this.Name = "FormDoiVien";
             this.Size = new System.Drawing.Size(1028, 688);
+            this.Load += new System.EventHandler(this.FormDoiVien_Load);
             this.pnlPhanQuyen.ResumeLayout(false);
             this.pnlFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
             this.pnlTop.ResumeLayout(false);
+            this.pnlTop.PerformLayout();
             this.pnlTextBox.ResumeLayout(false);
             this.pnlTextBox.PerformLayout();
             this.pnlChucVu.ResumeLayout(false);
@@ -555,9 +686,15 @@
             this.pnlNgaySinh.PerformLayout();
             this.pnlQueQuan.ResumeLayout(false);
             this.pnlQueQuan.PerformLayout();
-            this.pnlKhoaKetNap.ResumeLayout(false);
-            this.pnlKhoaKetNap.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel4.ResumeLayout(false);
+            this.tableLayoutPanel4.PerformLayout();
             this.pnlManageTools.ResumeLayout(false);
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -573,9 +710,6 @@
         private System.Windows.Forms.TableLayoutPanel pnlMaSV;
         private System.Windows.Forms.Label lblMaSV;
         private System.Windows.Forms.TextBox txtMaSV;
-        private System.Windows.Forms.TableLayoutPanel pnlKhoaKetNap;
-        private System.Windows.Forms.ComboBox cbxKhoaKetNap;
-        private System.Windows.Forms.LinkLabel lblKhoaKetNap;
         private System.Windows.Forms.TableLayoutPanel pnlChucVu;
         private System.Windows.Forms.Label lblChucVu;
         private System.Windows.Forms.ComboBox cbxChucVu;
@@ -594,5 +728,16 @@
         private System.Windows.Forms.TableLayoutPanel pnlQueQuan;
         private System.Windows.Forms.Label lblQueQuan;
         private System.Windows.Forms.ComboBox cbxQueQuan;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

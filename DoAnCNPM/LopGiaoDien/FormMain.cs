@@ -14,6 +14,9 @@ namespace DoAnCNPM.LopGiaoDien
     public partial class FormMain : Form
     {
         FormDangNhap dangNhap;
+        Boolean drag = false;
+        int mousex;
+        int mousey;
 
         public FormMain()
         {
@@ -153,6 +156,27 @@ namespace DoAnCNPM.LopGiaoDien
             FormCongTacVien formCongTacVien = new FormCongTacVien();
             this.pnlMain.Controls.Add(formCongTacVien);
             formCongTacVien.Dock = DockStyle.Fill;
+        }
+
+        private void pnlTitleBar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (drag==true)
+            {
+                this.Top = Cursor.Position.Y - mousey;
+                this.Left = Cursor.Position.X - mousex;
+            }
+        }
+
+        private void pnlTitleBar_MouseDown(object sender, MouseEventArgs e)
+        {
+            drag = true;
+            mousex = Cursor.Position.X - this.Left;
+            mousey = Cursor.Position.Y -this.Top;
+        }
+
+        private void pnlTitleBar_MouseUp(object sender, MouseEventArgs e)
+        {
+            drag = false;
         }
     }
 }

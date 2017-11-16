@@ -48,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DoiCTXH.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DoiCTXH.dbml</DependentUpon>
+    </Compile>
     <Compile Include="LopGiaoDien\FormBanDieuHanh.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +107,7 @@
     <Compile Include="LopGiaoDien\FormQuanLyKho.Designer.cs">
       <DependentUpon>FormQuanLyKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="LopNghiepVu\NghiepVuDoiVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="LopGiaoDien\FormBanDieuHanh.resx">
@@ -137,6 +143,14 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="DoiCTXH.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>DoiCTXH.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DoiCTXH.dbml.layout">
+      <DependentUpon>DoiCTXH.dbml</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -156,7 +170,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="LopNghiepVu\" />
+    <None Include="Resources\thedoivien.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn close.png" />
@@ -256,6 +270,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icon sua2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

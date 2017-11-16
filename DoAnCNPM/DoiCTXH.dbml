@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DoiCTXH" Class="DoiCTXHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTHONGPC\SQLEXPRESS;Initial Catalog=DoiCTXH;User ID=nhom11" SettingsObjectName="DoAnCNPM.Properties.Settings" SettingsPropertyName="DoiCTXHConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ban" Member="Bans">
+    <Type Name="Ban">
+      <Column Name="Ma_ban" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tenban" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaythanhlap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Ban_ThamgiaBan" Member="ThamgiaBans" ThisKey="Ma_ban" OtherKey="Ma_ban" Type="ThamgiaBan" />
+    </Type>
+  </Table>
+  <Table Name="dbo.BanDieuhanh" Member="BanDieuhanhs">
+    <Type Name="BanDieuhanh">
+      <Column Name="NhiemKy" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ngaybatdau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="BanDieuhanh_ThamgiaBDH" Member="ThamgiaBDHs" ThisKey="NhiemKy" OtherKey="Nhiemky" Type="ThamgiaBDH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Chuongtrinh" Member="Chuongtrinhs">
+    <Type Name="Chuongtrinh">
+      <Column Name="Ma_CT" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenCT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaytochuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Diadiem" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Kinhphi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiemCTXH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Chuongtrinh_Thamgiachuongtrinh" Member="Thamgiachuongtrinhs" ThisKey="Ma_CT" OtherKey="Ma_CT" Type="Thamgiachuongtrinh" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Images" Member="Images">
+    <Type Name="Image">
+      <Column Name="Url" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="Ghichu" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Kho" Member="Khos">
+    <Type Name="Kho">
+      <Column Name="Ma_VD" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TenVD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Donvi" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Khoa" Member="Khoas">
+    <Type Name="Khoa">
+      <Column Name="Ma_Khoa" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="NgayThanhlap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Khoa_Thanhvien" Member="Thanhviens" ThisKey="Ma_Khoa" OtherKey="Khoa" Type="Thanhvien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Khoadoivien" Member="Khoadoiviens">
+    <Type Name="Khoadoivien">
+      <Column Name="Ma_Khoa" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ngayketnap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="Khoadoivien_Thanhvien" Member="Thanhviens" ThisKey="Ma_Khoa" OtherKey="KhoaDV" Type="Thanhvien" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThamgiaBan" Member="ThamgiaBans">
+    <Type Name="ThamgiaBan">
+      <Column Name="Ma_ban" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="Ban_ThamgiaBan" Member="Ban" ThisKey="Ma_ban" OtherKey="Ma_ban" Type="Ban" IsForeignKey="true" />
+      <Association Name="Thanhvien_ThamgiaBan" Member="Thanhvien" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="Thanhvien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ThamgiaBDH" Member="ThamgiaBDHs">
+    <Type Name="ThamgiaBDH">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nhiemky" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Chucvu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Association Name="BanDieuhanh_ThamgiaBDH" Member="BanDieuhanh" ThisKey="Nhiemky" OtherKey="NhiemKy" Type="BanDieuhanh" IsForeignKey="true" />
+      <Association Name="Thanhvien_ThamgiaBDH" Member="Thanhvien" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="Thanhvien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thamgiachuongtrinh" Member="Thamgiachuongtrinhs">
+    <Type Name="Thamgiachuongtrinh">
+      <Column Name="Ma_CT" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DiemCTXH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Danhgia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Chuongtrinh_Thamgiachuongtrinh" Member="Chuongtrinh" ThisKey="Ma_CT" OtherKey="Ma_CT" Type="Chuongtrinh" IsForeignKey="true" />
+      <Association Name="Thanhvien_Thamgiachuongtrinh" Member="Thanhvien" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="Thanhvien" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Thanhvien" Member="Thanhviens">
+    <Type Name="Thanhvien">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Khoa" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="Thanhvien_ThamgiaBan" Member="ThamgiaBans" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="ThamgiaBan" />
+      <Association Name="Thanhvien_ThamgiaBDH" Member="ThamgiaBDHs" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="ThamgiaBDH" />
+      <Association Name="Thanhvien_Thamgiachuongtrinh" Member="Thamgiachuongtrinhs" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="Thamgiachuongtrinh" />
+      <Association Name="Khoa_Thanhvien" Member="Khoa1" ThisKey="Khoa" OtherKey="Ma_Khoa" Type="Khoa" IsForeignKey="true" />
+      <Association Name="Khoadoivien_Thanhvien" Member="Khoadoivien" ThisKey="KhoaDV" OtherKey="Ma_Khoa" Type="Khoadoivien" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLog" Member="UserLogs">
+    <Type Name="UserLog">
+      <Column Name="Username" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pass" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Adminitrator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Tinhnguyen" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Nhansu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Quankho" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.sp_test" Method="sp_test">
+    <Parameter Name="chuoi_tra_ve" Type="System.String" DbType="VarChar(20)" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ThemThanhVien" Method="sp_ThemThanhVien">
+    <Parameter Name="return" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="Hoten" Parameter="hoten" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Ngaysinh" Parameter="ngaysinh" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Quequan" Parameter="quequan" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Nganh" Parameter="nganh" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Khoa" Parameter="khoa" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(15)" />
+  </Function>
+  <Function Name="dbo.Sp_TimKiemTV" Method="Sp_TimKiemTV">
+    <Parameter Name="Ma" Parameter="ma" Type="System.String" DbType="NVarChar(30)" />
+  </Function>
+  <Function Name="dbo.upt_ThanhVien" Method="upt_ThanhVien">
+    <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Hoten" Parameter="hoten" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Ngaysinh" Parameter="ngaysinh" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="Quequan" Parameter="quequan" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Nganh" Parameter="nganh" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Khoa" Parameter="khoa" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(30)" />
+  </Function>
+  <Function Name="dbo.usp_SoDV" Method="usp_SoDV">
+    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Soluong" Parameter="soluong" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.fu_DS_DoivienTheoKDV" Method="fu_DS_DoivienTheoKDV" IsComposable="true">
+    <Parameter Name="KhoaDv" Parameter="khoaDv" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="fu_DS_DoivienTheoKDVResult">
+      <Column Name="MSSV" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Khoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>
