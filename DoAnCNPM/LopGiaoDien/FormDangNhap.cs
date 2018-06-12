@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using DoAnCNPM.LopNghiepVu;
 namespace DoAnCNPM.LopGiaoDien
 {
     public partial class FormDangNhap : Form
@@ -21,7 +21,7 @@ namespace DoAnCNPM.LopGiaoDien
         string passWord { get; set; }
         string ip { get; set; }
         string DatabaseName { get; set; }
-        DoiCTXHDataContext doiCTXH = new DoiCTXHDataContext();
+        DoiCTXHDataContext doiCTXH = new DoiCTXHDataContext(Dynamic_Connection.ConnectStr);
 
         public FormDangNhap()
         {
@@ -36,13 +36,15 @@ namespace DoAnCNPM.LopGiaoDien
         private void btnSignIn_Click(object sender, EventArgs e)
         {
             //Kiểm tra đã nhập đũ các dữ liệu
-            if (txtUsername.TextLength > 0 && txtPassword.TextLength > 0)
+            if (txtUsername.TextLength > 0 && txtPassword.TextLength > 0 && txtIP.TextLength > 0)
             {
                 this.userName = this.txtUsername.Text;
                 this.ip = this.txtIP.Text;
                 this.passWord = this.txtPassword.Text;
-                doiCTXH.Connection.ConnectionString = "Data Source=" + this.ip + ";" + "User ID=" 
+                string str= "Data Source=" + this.ip + ";" + "User ID="
                     + this.userName + ";" + "Password=" + this.passWord + ";";
+                doiCTXH.Connection.ConnectionString = str;
+                Dynamic_Connection.ConnectStr = str;
                 try
                 {
                     doiCTXH.Connection.Open();
@@ -50,6 +52,7 @@ namespace DoAnCNPM.LopGiaoDien
                 catch
                 {
                     MessageBox.Show("KHÔNG THỂ KẾT NỐI ĐẾN SERVER NÀY!");
+                    return;
                 }
                 if (doiCTXH.Connection.State == ConnectionState.Open)
                 {
@@ -62,7 +65,11 @@ namespace DoAnCNPM.LopGiaoDien
                         foreach (DataRow database in databases.Rows)
                         {
                             string databaseName = database.Field<string>("Database_Name");
-                            this.cbxDatabase.Items.Add(databaseName);
+                            if(databaseName != "master" && databaseName != "model"
+                                && databaseName != "tempdb" && databaseName != "msdb"
+                                && databaseName != "ReportServer$SQLEXPRESS"
+                                && databaseName != "ReportServer$SQLEXPRESSTempDB")
+                                this.cbxDatabase.Items.Add(databaseName);
                         }
                     }
                     
@@ -70,7 +77,8 @@ namespace DoAnCNPM.LopGiaoDien
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập Username và Password");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
             }
         }
 
@@ -97,12 +105,20 @@ namespace DoAnCNPM.LopGiaoDien
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            if (this.cbxDatabase.Text == "")
+            {
+                MessageBox.Show("Vui lòng chọn cơ sở dữ liệu!");
+                return;
+            }
+            Account.User = this.userName;
             this.DatabaseName = this.cbxDatabase.Text.ToString();
             doiCTXH.Connection.Close();
-            doiCTXH.Connection.ConnectionString = "Data Source=" + this.ip + ";" 
-                + "Initial Catalog=" + this.DatabaseName + ";" 
-                + "User ID=" + this.userName + ";" 
+            string str= "Data Source=" + this.ip + ";"
+                + "Initial Catalog=" + this.DatabaseName + ";"
+                + "User ID=" + this.userName + ";"
                 + "Password=" + this.passWord + ";";
+            doiCTXH.Connection.ConnectionString = str;
+            Dynamic_Connection.ConnectStr = str;
             try
             {
                 doiCTXH.Connection.Open();
@@ -110,6 +126,7 @@ namespace DoAnCNPM.LopGiaoDien
             catch
             {
                 MessageBox.Show("KHÔNG ĐỦ QUYỀN HẠN KẾT NỐI ĐẾN CƠ SỞ DỮ LIỆU NÀY!");
+                return;
             }
             this.Close();
         }

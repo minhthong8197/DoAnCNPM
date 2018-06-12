@@ -33,31 +33,39 @@
             this.lblFooter = new System.Windows.Forms.Label();
             this.dgvMain = new System.Windows.Forms.DataGridView();
             this.pnlTop = new System.Windows.Forms.TableLayoutPanel();
+            this.pnlMiniWindow = new System.Windows.Forms.Panel();
+            this.pnlDoipass = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnOKDoi = new System.Windows.Forms.Button();
+            this.pnlNewPass = new System.Windows.Forms.TableLayoutPanel();
+            this.linkLabel5 = new System.Windows.Forms.LinkLabel();
+            this.txtNewPass = new System.Windows.Forms.TextBox();
+            this.btnShow = new System.Windows.Forms.Button();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.cbxLogin = new System.Windows.Forms.ComboBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pnlTextBox = new System.Windows.Forms.TableLayoutPanel();
-            this.pnlPassword = new System.Windows.Forms.TableLayoutPanel();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
             this.pnlUsername = new System.Windows.Forms.TableLayoutPanel();
             this.lblUsername = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.pnlVaiTro = new System.Windows.Forms.TableLayoutPanel();
             this.lblVaiTro = new System.Windows.Forms.Label();
             this.cbxVaiTro = new System.Windows.Forms.ComboBox();
-            this.pnlManageTools = new System.Windows.Forms.TableLayoutPanel();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnCapNhat = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnDoiPass = new System.Windows.Forms.Button();
             this.pnlPhanQuyen.SuspendLayout();
             this.pnlFooter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).BeginInit();
             this.pnlTop.SuspendLayout();
+            this.pnlMiniWindow.SuspendLayout();
+            this.pnlDoipass.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.pnlNewPass.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.pnlTextBox.SuspendLayout();
-            this.pnlPassword.SuspendLayout();
             this.pnlUsername.SuspendLayout();
             this.pnlVaiTro.SuspendLayout();
-            this.pnlManageTools.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlPhanQuyen
@@ -104,21 +112,24 @@
             // 
             // dgvMain
             // 
+            this.dgvMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMain.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMain.Location = new System.Drawing.Point(3, 273);
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.Size = new System.Drawing.Size(1022, 382);
             this.dgvMain.TabIndex = 1;
+            this.dgvMain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMain_CellClick);
             // 
             // pnlTop
             // 
             this.pnlTop.ColumnCount = 3;
-            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 340F));
-            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 0F));
-            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 682F));
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 487F));
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.pnlTop.Controls.Add(this.pnlMiniWindow, 1, 0);
             this.pnlTop.Controls.Add(this.pnlTextBox, 0, 0);
-            this.pnlTop.Controls.Add(this.pnlManageTools, 2, 0);
+            this.pnlTop.Controls.Add(this.panel1, 2, 0);
             this.pnlTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTop.Location = new System.Drawing.Point(3, 3);
             this.pnlTop.Name = "pnlTop";
@@ -127,61 +138,199 @@
             this.pnlTop.Size = new System.Drawing.Size(1022, 264);
             this.pnlTop.TabIndex = 4;
             // 
+            // pnlMiniWindow
+            // 
+            this.pnlMiniWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlMiniWindow.Controls.Add(this.pnlDoipass);
+            this.pnlMiniWindow.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlMiniWindow.Location = new System.Drawing.Point(490, 0);
+            this.pnlMiniWindow.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlMiniWindow.Name = "pnlMiniWindow";
+            this.pnlMiniWindow.Size = new System.Drawing.Size(407, 264);
+            this.pnlMiniWindow.TabIndex = 8;
+            this.pnlMiniWindow.Visible = false;
+            // 
+            // pnlDoipass
+            // 
+            this.pnlDoipass.ColumnCount = 1;
+            this.pnlDoipass.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlDoipass.Controls.Add(this.panel3, 0, 2);
+            this.pnlDoipass.Controls.Add(this.pnlNewPass, 0, 1);
+            this.pnlDoipass.Controls.Add(this.tableLayoutPanel5, 0, 0);
+            this.pnlDoipass.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlDoipass.Location = new System.Drawing.Point(0, 0);
+            this.pnlDoipass.Margin = new System.Windows.Forms.Padding(0);
+            this.pnlDoipass.Name = "pnlDoipass";
+            this.pnlDoipass.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.pnlDoipass.RowCount = 3;
+            this.pnlDoipass.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.pnlDoipass.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.pnlDoipass.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
+            this.pnlDoipass.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.pnlDoipass.Size = new System.Drawing.Size(407, 264);
+            this.pnlDoipass.TabIndex = 6;
+            this.pnlDoipass.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnOKDoi);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(20, 198);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.panel3.Size = new System.Drawing.Size(367, 66);
+            this.panel3.TabIndex = 14;
+            // 
+            // btnOKDoi
+            // 
+            this.btnOKDoi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnOKDoi.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnOKDoi.FlatAppearance.BorderSize = 0;
+            this.btnOKDoi.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnOKDoi.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnOKDoi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOKDoi.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnOKDoi.Location = new System.Drawing.Point(0, 0);
+            this.btnOKDoi.Name = "btnOKDoi";
+            this.btnOKDoi.Size = new System.Drawing.Size(367, 51);
+            this.btnOKDoi.TabIndex = 11;
+            this.btnOKDoi.Text = "OK";
+            this.btnOKDoi.UseVisualStyleBackColor = false;
+            this.btnOKDoi.Click += new System.EventHandler(this.btnOKDoi_Click);
+            // 
+            // pnlNewPass
+            // 
+            this.pnlNewPass.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlNewPass.AutoSize = true;
+            this.pnlNewPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnlNewPass.ColumnCount = 3;
+            this.pnlNewPass.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.pnlNewPass.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlNewPass.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.pnlNewPass.Controls.Add(this.linkLabel5, 0, 0);
+            this.pnlNewPass.Controls.Add(this.txtNewPass, 1, 0);
+            this.pnlNewPass.Controls.Add(this.btnShow, 2, 0);
+            this.pnlNewPass.Location = new System.Drawing.Point(23, 117);
+            this.pnlNewPass.Name = "pnlNewPass";
+            this.pnlNewPass.RowCount = 1;
+            this.pnlNewPass.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.pnlNewPass.Size = new System.Drawing.Size(361, 30);
+            this.pnlNewPass.TabIndex = 3;
+            // 
+            // linkLabel5
+            // 
+            this.linkLabel5.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel5.AutoSize = true;
+            this.linkLabel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkLabel5.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.linkLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.linkLabel5.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel5.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.linkLabel5.Location = new System.Drawing.Point(3, 0);
+            this.linkLabel5.Name = "linkLabel5";
+            this.linkLabel5.Size = new System.Drawing.Size(136, 30);
+            this.linkLabel5.TabIndex = 2;
+            this.linkLabel5.TabStop = true;
+            this.linkLabel5.Text = "New password";
+            this.linkLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel5.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            // 
+            // txtNewPass
+            // 
+            this.txtNewPass.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtNewPass.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtNewPass.Location = new System.Drawing.Point(142, 0);
+            this.txtNewPass.Margin = new System.Windows.Forms.Padding(0);
+            this.txtNewPass.Name = "txtNewPass";
+            this.txtNewPass.PasswordChar = '*';
+            this.txtNewPass.Size = new System.Drawing.Size(169, 30);
+            this.txtNewPass.TabIndex = 3;
+            // 
+            // btnShow
+            // 
+            this.btnShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnShow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnShow.FlatAppearance.BorderSize = 0;
+            this.btnShow.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnShow.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnShow.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShow.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShow.ForeColor = System.Drawing.Color.White;
+            this.btnShow.Location = new System.Drawing.Point(311, 0);
+            this.btnShow.Margin = new System.Windows.Forms.Padding(0);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(50, 30);
+            this.btnShow.TabIndex = 4;
+            this.btnShow.Text = "Show";
+            this.btnShow.UseVisualStyleBackColor = false;
+            this.btnShow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShow_MouseDown);
+            this.btnShow.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShow_MouseUp);
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel5.AutoSize = true;
+            this.tableLayoutPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Controls.Add(this.cbxLogin, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.linkLabel1, 0, 0);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(23, 28);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 1;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(361, 32);
+            this.tableLayoutPanel5.TabIndex = 3;
+            // 
+            // cbxLogin
+            // 
+            this.cbxLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.cbxLogin.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.cbxLogin.FormattingEnabled = true;
+            this.cbxLogin.Items.AddRange(new object[] {
+            "DoiTruong",
+            "BanDieuHanh"});
+            this.cbxLogin.Location = new System.Drawing.Point(64, 0);
+            this.cbxLogin.Margin = new System.Windows.Forms.Padding(0);
+            this.cbxLogin.Name = "cbxLogin";
+            this.cbxLogin.Size = new System.Drawing.Size(297, 32);
+            this.cbxLogin.TabIndex = 1;
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.linkLabel1.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.linkLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.linkLabel1.Location = new System.Drawing.Point(3, 0);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(58, 32);
+            this.linkLabel1.TabIndex = 2;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Login";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            // 
             // pnlTextBox
             // 
             this.pnlTextBox.ColumnCount = 1;
             this.pnlTextBox.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlTextBox.Controls.Add(this.pnlPassword, 0, 1);
             this.pnlTextBox.Controls.Add(this.pnlUsername, 0, 0);
-            this.pnlTextBox.Controls.Add(this.pnlVaiTro, 0, 2);
+            this.pnlTextBox.Controls.Add(this.pnlVaiTro, 0, 1);
             this.pnlTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTextBox.Location = new System.Drawing.Point(3, 3);
             this.pnlTextBox.Name = "pnlTextBox";
-            this.pnlTextBox.RowCount = 3;
-            this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.3F));
+            this.pnlTextBox.Padding = new System.Windows.Forms.Padding(0, 40, 0, 40);
+            this.pnlTextBox.RowCount = 2;
             this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.3F));
             this.pnlTextBox.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.4F));
-            this.pnlTextBox.Size = new System.Drawing.Size(334, 258);
+            this.pnlTextBox.Size = new System.Drawing.Size(481, 258);
             this.pnlTextBox.TabIndex = 2;
-            // 
-            // pnlPassword
-            // 
-            this.pnlPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pnlPassword.AutoSize = true;
-            this.pnlPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pnlPassword.ColumnCount = 2;
-            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.pnlPassword.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlPassword.Controls.Add(this.lblPassword, 0, 0);
-            this.pnlPassword.Controls.Add(this.txtPassword, 1, 0);
-            this.pnlPassword.Location = new System.Drawing.Point(9, 115);
-            this.pnlPassword.Name = "pnlPassword";
-            this.pnlPassword.RowCount = 1;
-            this.pnlPassword.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlPassword.Size = new System.Drawing.Size(316, 24);
-            this.pnlPassword.TabIndex = 2;
-            // 
-            // lblPassword
-            // 
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblPassword.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblPassword.ForeColor = System.Drawing.Color.White;
-            this.lblPassword.Location = new System.Drawing.Point(3, 0);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(95, 24);
-            this.lblPassword.TabIndex = 0;
-            this.lblPassword.Text = "Password";
-            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // txtPassword
-            // 
-            this.txtPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassword.Location = new System.Drawing.Point(101, 2);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(0);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(215, 20);
-            this.txtPassword.TabIndex = 1;
             // 
             // pnlUsername
             // 
@@ -193,11 +342,11 @@
             this.pnlUsername.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlUsername.Controls.Add(this.lblUsername, 0, 0);
             this.pnlUsername.Controls.Add(this.txtUsername, 1, 0);
-            this.pnlUsername.Location = new System.Drawing.Point(8, 30);
+            this.pnlUsername.Location = new System.Drawing.Point(46, 69);
             this.pnlUsername.Name = "pnlUsername";
             this.pnlUsername.RowCount = 1;
             this.pnlUsername.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlUsername.Size = new System.Drawing.Size(317, 24);
+            this.pnlUsername.Size = new System.Drawing.Size(388, 30);
             this.pnlUsername.TabIndex = 2;
             // 
             // lblUsername
@@ -208,7 +357,7 @@
             this.lblUsername.ForeColor = System.Drawing.Color.White;
             this.lblUsername.Location = new System.Drawing.Point(3, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(97, 24);
+            this.lblUsername.Size = new System.Drawing.Size(97, 30);
             this.lblUsername.TabIndex = 0;
             this.lblUsername.Text = "Username";
             this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -216,10 +365,11 @@
             // txtUsername
             // 
             this.txtUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtUsername.Location = new System.Drawing.Point(103, 2);
+            this.txtUsername.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtUsername.Location = new System.Drawing.Point(103, 0);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(0);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(214, 20);
+            this.txtUsername.Size = new System.Drawing.Size(285, 30);
             this.txtUsername.TabIndex = 1;
             // 
             // pnlVaiTro
@@ -232,11 +382,11 @@
             this.pnlVaiTro.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlVaiTro.Controls.Add(this.lblVaiTro, 0, 0);
             this.pnlVaiTro.Controls.Add(this.cbxVaiTro, 1, 0);
-            this.pnlVaiTro.Location = new System.Drawing.Point(9, 198);
+            this.pnlVaiTro.Location = new System.Drawing.Point(47, 157);
             this.pnlVaiTro.Name = "pnlVaiTro";
             this.pnlVaiTro.RowCount = 1;
             this.pnlVaiTro.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlVaiTro.Size = new System.Drawing.Size(316, 32);
+            this.pnlVaiTro.Size = new System.Drawing.Size(387, 32);
             this.pnlVaiTro.TabIndex = 2;
             // 
             // lblVaiTro
@@ -254,136 +404,44 @@
             // 
             // cbxVaiTro
             // 
-            this.cbxVaiTro.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cbxVaiTro.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
             this.cbxVaiTro.FormattingEnabled = true;
+            this.cbxVaiTro.Items.AddRange(new object[] {
+            "Administrator",
+            "BanDieuHanh"});
             this.cbxVaiTro.Location = new System.Drawing.Point(72, 0);
             this.cbxVaiTro.Margin = new System.Windows.Forms.Padding(0);
             this.cbxVaiTro.Name = "cbxVaiTro";
-            this.cbxVaiTro.Size = new System.Drawing.Size(244, 32);
+            this.cbxVaiTro.Size = new System.Drawing.Size(315, 32);
             this.cbxVaiTro.TabIndex = 1;
             // 
-            // pnlManageTools
+            // panel1
             // 
-            this.pnlManageTools.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.pnlManageTools.ColumnCount = 1;
-            this.pnlManageTools.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlManageTools.Controls.Add(this.btnXoa, 0, 4);
-            this.pnlManageTools.Controls.Add(this.btnHuy, 0, 3);
-            this.pnlManageTools.Controls.Add(this.btnLuu, 0, 2);
-            this.pnlManageTools.Controls.Add(this.btnCapNhat, 0, 1);
-            this.pnlManageTools.Controls.Add(this.btnThem, 0, 0);
-            this.pnlManageTools.Location = new System.Drawing.Point(343, 3);
-            this.pnlManageTools.Name = "pnlManageTools";
-            this.pnlManageTools.RowCount = 5;
-            this.pnlManageTools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnlManageTools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnlManageTools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnlManageTools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnlManageTools.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.pnlManageTools.Size = new System.Drawing.Size(160, 258);
-            this.pnlManageTools.TabIndex = 1;
+            this.panel1.Controls.Add(this.btnDoiPass);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(900, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(119, 258);
+            this.panel1.TabIndex = 3;
             // 
-            // btnXoa
+            // btnDoiPass
             // 
-            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnXoa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnXoa.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Image = global::DoAnCNPM.Properties.Resources.icon_xoa2;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(3, 207);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(154, 48);
-            this.btnXoa.TabIndex = 4;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoa.UseVisualStyleBackColor = false;
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnHuy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnHuy.FlatAppearance.BorderSize = 0;
-            this.btnHuy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnHuy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Image = global::DoAnCNPM.Properties.Resources.icon_huy2;
-            this.btnHuy.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHuy.Location = new System.Drawing.Point(3, 156);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(154, 45);
-            this.btnHuy.TabIndex = 3;
-            this.btnHuy.Text = "Hủy";
-            this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHuy.UseVisualStyleBackColor = false;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnLuu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnLuu.FlatAppearance.BorderSize = 0;
-            this.btnLuu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnLuu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Image = global::DoAnCNPM.Properties.Resources.icon_luu1;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(3, 105);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(154, 45);
-            this.btnLuu.TabIndex = 2;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnCapNhat.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnCapNhat.FlatAppearance.BorderSize = 0;
-            this.btnCapNhat.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnCapNhat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnCapNhat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCapNhat.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhat.Image = global::DoAnCNPM.Properties.Resources.icon_sua2;
-            this.btnCapNhat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCapNhat.Location = new System.Drawing.Point(3, 54);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(154, 45);
-            this.btnCapNhat.TabIndex = 1;
-            this.btnCapNhat.Text = "Cập nhật";
-            this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCapNhat.UseVisualStyleBackColor = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnThem.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnThem.FlatAppearance.BorderSize = 0;
-            this.btnThem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnThem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThem.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
-            this.btnThem.ForeColor = System.Drawing.Color.White;
-            this.btnThem.Image = global::DoAnCNPM.Properties.Resources.icon_them_2;
-            this.btnThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThem.Location = new System.Drawing.Point(3, 3);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(154, 45);
-            this.btnThem.TabIndex = 0;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnDoiPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDoiPass.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDoiPass.FlatAppearance.BorderSize = 0;
+            this.btnDoiPass.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnDoiPass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnDoiPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDoiPass.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDoiPass.ForeColor = System.Drawing.Color.White;
+            this.btnDoiPass.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDoiPass.Location = new System.Drawing.Point(0, 0);
+            this.btnDoiPass.Name = "btnDoiPass";
+            this.btnDoiPass.Size = new System.Drawing.Size(119, 76);
+            this.btnDoiPass.TabIndex = 6;
+            this.btnDoiPass.Text = "Đổi Password";
+            this.btnDoiPass.UseVisualStyleBackColor = false;
+            this.btnDoiPass.Click += new System.EventHandler(this.btnDoiPass_Click);
             // 
             // FormPhanQuyen
             // 
@@ -393,19 +451,26 @@
             this.Controls.Add(this.pnlPhanQuyen);
             this.Name = "FormPhanQuyen";
             this.Size = new System.Drawing.Size(1028, 688);
+            this.Load += new System.EventHandler(this.FormPhanQuyen_Load);
             this.pnlPhanQuyen.ResumeLayout(false);
             this.pnlFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();
             this.pnlTop.ResumeLayout(false);
+            this.pnlMiniWindow.ResumeLayout(false);
+            this.pnlDoipass.ResumeLayout(false);
+            this.pnlDoipass.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.pnlNewPass.ResumeLayout(false);
+            this.pnlNewPass.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.pnlTextBox.ResumeLayout(false);
             this.pnlTextBox.PerformLayout();
-            this.pnlPassword.ResumeLayout(false);
-            this.pnlPassword.PerformLayout();
             this.pnlUsername.ResumeLayout(false);
             this.pnlUsername.PerformLayout();
             this.pnlVaiTro.ResumeLayout(false);
             this.pnlVaiTro.PerformLayout();
-            this.pnlManageTools.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -420,18 +485,22 @@
         private System.Windows.Forms.TableLayoutPanel pnlTextBox;
         private System.Windows.Forms.TableLayoutPanel pnlVaiTro;
         private System.Windows.Forms.Label lblVaiTro;
-        private System.Windows.Forms.ComboBox cbxVaiTro;
-        private System.Windows.Forms.TableLayoutPanel pnlPassword;
-        private System.Windows.Forms.Label lblPassword;
-        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TableLayoutPanel pnlUsername;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.TableLayoutPanel pnlManageTools;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnHuy;
-        private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnCapNhat;
-        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.ComboBox cbxVaiTro;
+        private System.Windows.Forms.Panel pnlMiniWindow;
+        private System.Windows.Forms.TableLayoutPanel pnlDoipass;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btnOKDoi;
+        private System.Windows.Forms.TableLayoutPanel pnlNewPass;
+        private System.Windows.Forms.LinkLabel linkLabel5;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.ComboBox cbxLogin;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnDoiPass;
+        private System.Windows.Forms.TextBox txtNewPass;
+        private System.Windows.Forms.Button btnShow;
     }
 }

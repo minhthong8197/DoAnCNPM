@@ -43,5 +43,27 @@ namespace DoAnCNPM.Properties {
                 return ((string)(this["DoiCTXHConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-50BPBLT\\SQLEXPRESS;Initial Catalog=DoiCTXH;Integrated Securit" +
+            "y=True")]
+        public string DoiCTXHConnectionString2 {
+            get {
+                return ((string)(this["DoiCTXHConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=MINHTHONGPC\\SQLEXPRESS;Initial Catalog=DoiCTXH;Integrated Security=Tr" +
+            "ue")]
+        public string DoiCTXHConnectionString3 {
+            get {
+                return ((string)(this["DoiCTXHConnectionString3"]));
+            }
+        }
     }
 }

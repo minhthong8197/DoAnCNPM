@@ -8,21 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DoAnCNPM.LopGiaoDien;
-
+using DoAnCNPM.LopNghiepVu;
 namespace DoAnCNPM.LopGiaoDien
 {
     public partial class FormMain : Form
     {
+        DoiCTXHDataContext doiCTXH = new DoiCTXHDataContext(Dynamic_Connection.ConnectStr);
         FormDangNhap dangNhap;
+        FormBanDieuHanh banDieuHanh;
+        FormChuongTrinh chuongTrinh;
+        FormCongTacVien congTacVien;
+        FormCover cover;
+        FormDoiVien doiVien;
+        FormPhanQuyen phanQuyen;
+        FormQuanLyKho quanLyKho;
+        FormDsThamGiaChuongTrinh dsthamgia;
+        NghiepVuMain nghiepvu = new NghiepVuMain();
+        
+        //các biến hỗ trợ xử lí kéo rê form
         Boolean drag = false;
         int mousex;
         int mousey;
+        //các biến cho biết tài khoản đang đăng nhập
+        string User = "";
 
         public FormMain()
         {
             InitializeComponent();
+            doiCTXH.Connection.Close();
             dangNhap = new FormDangNhap();
-            dangNhap.FormClosing += new FormClosingEventHandler(Xulydangnhap);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -65,14 +79,10 @@ namespace DoAnCNPM.LopGiaoDien
         {
             dangNhap.ShowDialog();
             this.pnlMain.Controls.Clear();
-            FormCover cover = new FormCover();
+            cover = new FormCover();
             this.pnlMain.Controls.Add(cover);
             cover.Dock = DockStyle.Fill;
-        }
-
-        private void Xulydangnhap(object sender, EventArgs e)
-        {
-
+            if (nghiepvu.QuyenAdmin(Account.User) == false) this.pnlDoiTruong.Enabled = false;
         }
 
         private void btnThanhVien_Click(object sender, EventArgs e)
@@ -105,57 +115,61 @@ namespace DoAnCNPM.LopGiaoDien
 
         private void btnGioiThieu_Click(object sender, EventArgs e)
         {
-            if (this.pnlListGioiThieu.Visible == true)
-                this.pnlListGioiThieu.Visible = false;
-            else this.pnlListGioiThieu.Visible = true;
+            MessageBox.Show("Xem tại file hướng dẫn sử dụng!!!");
         }
 
         private void btnPhanQuyen_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            FormPhanQuyen phanQuyen = new FormPhanQuyen();
+            phanQuyen = new FormPhanQuyen();
             this.pnlMain.Controls.Add(phanQuyen);
             phanQuyen.Dock = DockStyle.Fill;
+            phanQuyen.NeedReload += new EventHandler(btnPhanQuyen_Click);
         }
 
         private void btnBanDieuHanh_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            FormBanDieuHanh banDieuHanh = new FormBanDieuHanh();
+            banDieuHanh = new FormBanDieuHanh();
             this.pnlMain.Controls.Add(banDieuHanh);
             banDieuHanh.Dock = DockStyle.Fill;
+            banDieuHanh.NeedReload += new EventHandler(btnBanDieuHanh_Click);
         }
 
         private void btnDoiVien_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            FormDoiVien doiVien = new FormDoiVien();
+            doiVien = new FormDoiVien();
             this.pnlMain.Controls.Add(doiVien);
             doiVien.Dock = DockStyle.Fill;
+            doiVien.NeedReload += new EventHandler(btnDoiVien_Click);
         }
 
         private void btnDsChuongTrinh_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            FormChuongTrinh formChuongTrinh = new FormChuongTrinh();
-            this.pnlMain.Controls.Add(formChuongTrinh);
-            formChuongTrinh.Dock = DockStyle.Fill;
+            chuongTrinh = new FormChuongTrinh();
+            this.pnlMain.Controls.Add(chuongTrinh);
+            chuongTrinh.Dock = DockStyle.Fill;
+            chuongTrinh.NeedReload += new EventHandler(btnDsChuongTrinh_Click);
         }
 
         private void btnVatDung_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            FormQuanLyKho formQuanLyKho = new FormQuanLyKho();
-            this.pnlMain.Controls.Add(formQuanLyKho);
-            formQuanLyKho.Dock = DockStyle.Fill;
+            quanLyKho = new FormQuanLyKho();
+            this.pnlMain.Controls.Add(quanLyKho);
+            quanLyKho.Dock = DockStyle.Fill;
+            quanLyKho.NeedReload += new EventHandler(btnVatDung_Click);
         }
 
         private void btnCongTacVien_Click(object sender, EventArgs e)
         {
             this.pnlMain.Controls.Clear();
-            FormCongTacVien formCongTacVien = new FormCongTacVien();
-            this.pnlMain.Controls.Add(formCongTacVien);
-            formCongTacVien.Dock = DockStyle.Fill;
+            congTacVien = new FormCongTacVien();
+            this.pnlMain.Controls.Add(congTacVien);
+            congTacVien.Dock = DockStyle.Fill;
+            congTacVien.NeedReload += new EventHandler(btnCongTacVien_Click);
         }
 
         private void pnlTitleBar_MouseMove(object sender, MouseEventArgs e)
@@ -177,6 +191,15 @@ namespace DoAnCNPM.LopGiaoDien
         private void pnlTitleBar_MouseUp(object sender, MouseEventArgs e)
         {
             drag = false;
+        }
+
+        private void btnDsThamGia_Click(object sender, EventArgs e)
+        {
+            this.pnlMain.Controls.Clear();
+            dsthamgia = new FormDsThamGiaChuongTrinh();
+            this.pnlMain.Controls.Add(dsthamgia);
+            dsthamgia.Dock = DockStyle.Fill;
+            dsthamgia.NeedReload += new EventHandler(btnDsThamGia_Click);
         }
     }
 }

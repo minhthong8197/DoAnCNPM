@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DoiCTXH" Class="DoiCTXHDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTHONGPC\SQLEXPRESS;Initial Catalog=DoiCTXH;User ID=nhom11" SettingsObjectName="DoAnCNPM.Properties.Settings" SettingsPropertyName="DoiCTXHConnectionString1" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.Ban" Member="Bans">
-    <Type Name="Ban">
-      <Column Name="Ma_ban" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Tenban" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="Ngaythanhlap" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Association Name="Ban_ThamgiaBan" Member="ThamgiaBans" ThisKey="Ma_ban" OtherKey="Ma_ban" Type="ThamgiaBan" />
-    </Type>
-  </Table>
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MINHTHONGPC\SQLEXPRESS;Initial Catalog=DoiCTXH;Integrated Security=True" SettingsObjectName="DoAnCNPM.Properties.Settings" SettingsPropertyName="DoiCTXHConnectionString3" Provider="System.Data.SqlClient" />
   <Table Name="dbo.BanDieuhanh" Member="BanDieuhanhs">
     <Type Name="BanDieuhanh">
       <Column Name="NhiemKy" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="Ngaybatdau" Type="System.DateTime" DbType="Date" CanBeNull="true" />
       <Association Name="BanDieuhanh_ThamgiaBDH" Member="ThamgiaBDHs" ThisKey="NhiemKy" OtherKey="Nhiemky" Type="ThamgiaBDH" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserLog" Member="UserLogs">
+    <Type Name="UserLog">
+      <Column Name="Username" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Pass" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Administrator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BanDieuHanh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.Chuongtrinh" Member="Chuongtrinhs">
@@ -55,14 +55,6 @@
       <Association Name="Khoadoivien_Thanhvien" Member="Thanhviens" ThisKey="Ma_Khoa" OtherKey="KhoaDV" Type="Thanhvien" />
     </Type>
   </Table>
-  <Table Name="dbo.ThamgiaBan" Member="ThamgiaBans">
-    <Type Name="ThamgiaBan">
-      <Column Name="Ma_ban" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Association Name="Ban_ThamgiaBan" Member="Ban" ThisKey="Ma_ban" OtherKey="Ma_ban" Type="Ban" IsForeignKey="true" />
-      <Association Name="Thanhvien_ThamgiaBan" Member="Thanhvien" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="Thanhvien" IsForeignKey="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.ThamgiaBDH" Member="ThamgiaBDHs">
     <Type Name="ThamgiaBDH">
       <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -91,64 +83,362 @@
       <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Khoa" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
       <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
-      <Association Name="Thanhvien_ThamgiaBan" Member="ThamgiaBans" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="ThamgiaBan" />
       <Association Name="Thanhvien_ThamgiaBDH" Member="ThamgiaBDHs" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="ThamgiaBDH" />
       <Association Name="Thanhvien_Thamgiachuongtrinh" Member="Thamgiachuongtrinhs" ThisKey="Ma_SV" OtherKey="Ma_SV" Type="Thamgiachuongtrinh" />
       <Association Name="Khoa_Thanhvien" Member="Khoa1" ThisKey="Khoa" OtherKey="Ma_Khoa" Type="Khoa" IsForeignKey="true" />
       <Association Name="Khoadoivien_Thanhvien" Member="Khoadoivien" ThisKey="KhoaDV" OtherKey="Ma_Khoa" Type="Khoadoivien" IsForeignKey="true" DeleteRule="SET NULL" />
     </Type>
   </Table>
-  <Table Name="dbo.UserLog" Member="UserLogs">
-    <Type Name="UserLog">
-      <Column Name="Username" Type="System.String" DbType="NVarChar(30) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="Pass" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="Adminitrator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Tinhnguyen" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Nhansu" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="Quankho" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Function Name="dbo.sp_test" Method="sp_test">
-    <Parameter Name="chuoi_tra_ve" Type="System.String" DbType="VarChar(20)" Direction="InOut" />
+  <Function Name="dbo.ds_KhoaDV" Method="ds_KhoaDV">
+    <ElementType Name="ds_KhoaDVResult">
+      <Column Name="Ma_Khoa" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.XoaThamgiaCT" Method="XoaThamgiaCT">
+    <Parameter Name="Ma_SV" Parameter="ma_SV" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DelThamgiaCT" Method="sp_DelThamgiaCT">
+    <Parameter Name="MaSv" Parameter="maSv" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_DemDoivien" Method="sp_DemDoivien">
+    <Parameter Name="Ma_KhoaDV" Parameter="ma_KhoaDV" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="sp_DemDoivienResult">
+      <Column Name="" Member="Column1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.sp_ThamgiaBDH" Method="sp_ThamgiaBDH">
+    <Parameter Name="MaSV" Parameter="maSV" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="Nhiemky" Parameter="nhiemky" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Chucvu" Parameter="chucvu" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ThemChuongTrinh" Method="sp_ThemChuongTrinh">
+    <Parameter Name="Ma_CT" Parameter="ma_CT" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="TenCT" Parameter="tenCT" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="NgayToChuc" Parameter="ngayToChuc" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DiaDiem" Parameter="diaDiem" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="KinhPhi" Parameter="kinhPhi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DiemCTXH" Parameter="diemCTXH" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_ThemNhiemKy" Method="sp_ThemNhiemKy">
     <Return Type="System.Int32" />
   </Function>
   <Function Name="dbo.sp_ThemThanhVien" Method="sp_ThemThanhVien">
-    <Parameter Name="return" Type="System.Int32" DbType="Int" Direction="InOut" />
-    <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="NVarChar(15)" />
-    <Parameter Name="Hoten" Parameter="hoten" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Ma_SV" Parameter="ma_SV" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="Hoten" Parameter="hoten" Type="System.String" DbType="NVarChar(50)" />
     <Parameter Name="Ngaysinh" Parameter="ngaysinh" Type="System.DateTime" DbType="Date" />
-    <Parameter Name="Quequan" Parameter="quequan" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="Nganh" Parameter="nganh" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="Quequan" Parameter="quequan" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Nganh" Parameter="nganh" Type="System.String" DbType="NVarChar(50)" />
     <Parameter Name="Khoa" Parameter="khoa" Type="System.String" DbType="NVarChar(15)" />
     <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.Sp_TimKiemTV" Method="Sp_TimKiemTV">
-    <Parameter Name="Ma" Parameter="ma" Type="System.String" DbType="NVarChar(30)" />
+  <Function Name="dbo.sp_ThemVatDung" Method="sp_ThemVatDung">
+    <Parameter Name="MaVD" Parameter="maVD" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="TenVD" Parameter="tenVD" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Donvi" Parameter="donvi" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="Soluong" Parameter="soluong" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
   </Function>
-  <Function Name="dbo.upt_ThanhVien" Method="upt_ThanhVien">
+  <Function Name="dbo.sp_UpdateChuongTrinh" Method="sp_UpdateChuongTrinh">
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="TenCT" Parameter="tenCT" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Ngaytochuc" Parameter="ngaytochuc" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="DiaDiem" Parameter="diaDiem" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Kinhphi" Parameter="kinhphi" Type="System.Int32" DbType="Int" />
+    <Parameter Name="DiemCTXH" Parameter="diemCTXH" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UpdateThamgiaCT" Method="sp_UpdateThamgiaCT">
+    <Parameter Name="MaSv" Parameter="maSv" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="DiemCTXH" Parameter="diemCTXH" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Danhgia" Parameter="danhgia" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UpdateThanhVien" Method="sp_UpdateThanhVien">
     <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="NVarChar(30)" />
     <Parameter Name="Hoten" Parameter="hoten" Type="System.String" DbType="NVarChar(50)" />
     <Parameter Name="Ngaysinh" Parameter="ngaysinh" Type="System.DateTime" DbType="Date" />
-    <Parameter Name="Quequan" Parameter="quequan" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="Nganh" Parameter="nganh" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="Khoa" Parameter="khoa" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(30)" />
-  </Function>
-  <Function Name="dbo.usp_SoDV" Method="usp_SoDV">
-    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(30)" />
-    <Parameter Name="Soluong" Parameter="soluong" Type="System.Int32" DbType="Int" Direction="InOut" />
+    <Parameter Name="Quequan" Parameter="quequan" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Nganh" Parameter="nganh" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="Khoa" Parameter="khoa" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(50)" />
     <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_UpdateVatDung" Method="sp_UpdateVatDung">
+    <Parameter Name="MaVD" Parameter="maVD" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="TenVD" Parameter="tenVD" Type="System.String" DbType="NVarChar(50)" />
+    <Parameter Name="DonVi" Parameter="donVi" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="SoLuong" Parameter="soLuong" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_XoaChuongTrinh" Method="sp_XoaChuongTrinh">
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_XoaThongtin_Thanhvien" Method="sp_XoaThongtin_Thanhvien">
+    <Parameter Name="MaSV" Parameter="maSV" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.sp_XoaVatdung" Method="sp_XoaVatdung">
+    <Parameter Name="Ma" Parameter="ma" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ThamgiaCT" Method="ThamgiaCT">
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="MaSV" Parameter="maSV" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="DiemCTXH" Parameter="diemCTXH" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Danhgia" Parameter="danhgia" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.ThaytheBDH" Method="ThaytheBDH">
+    <Parameter Name="Nhiemky" Parameter="nhiemky" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Ma_SV_Duongnhiem" Parameter="ma_SV_Duongnhiem" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="Ma_SV_Thaythe" Parameter="ma_SV_Thaythe" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.usp_Ketnap" Method="usp_Ketnap">
+    <Parameter Name="Ma_SV" Parameter="ma_SV" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="Ma_Khoa" Parameter="ma_Khoa" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.usp_Xoa_Thanhvien" Method="usp_Xoa_Thanhvien">
+    <Parameter Name="MSSV" Parameter="mSSV" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.uspDoiMatKhau" Method="uspDoiMatKhau">
+    <Parameter Name="forlogin" Type="System.String" DbType="NVarChar(30)" />
+    <Parameter Name="newpass" Type="System.String" DbType="NVarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.fnc_DemDVTheoKhoa" Method="fnc_DemDVTheoKhoa" IsComposable="true">
+    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.fu_TimKiemDoiVien_TheoTen" Method="fu_TimKiemDoiVien_TheoTen" IsComposable="true">
+    <Parameter Name="Ho_ten" Parameter="ho_ten" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="fu_TimKiemDoiVien_TheoTenResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_ds_BanDieuHanh" Method="fu_ds_BanDieuHanh" IsComposable="true">
+    <ElementType Name="fu_ds_BanDieuHanhResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Nhiemky" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_ds_BDH_Nhiemky" Method="fu_ds_BDH_Nhiemky" IsComposable="true">
+    <Parameter Name="Nhiemky" Parameter="nhiemky" Type="System.Int32" DbType="Int" />
+    <ElementType Name="fu_ds_BDH_NhiemkyResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Chucvu" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_Ds_Chuongtrinh" Method="fu_Ds_Chuongtrinh" IsComposable="true">
+    <ElementType Name="fu_Ds_ChuongtrinhResult">
+      <Column Name="Ma_CT" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TenCT" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaytochuc" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Diadiem" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Kinhphi" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DiemCTXH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_ds_CongTacVien" Method="fu_ds_CongTacVien" IsComposable="true">
+    <ElementType Name="fu_ds_CongTacVienResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_ds_Doivien" Method="fu_ds_Doivien" IsComposable="true">
+    <ElementType Name="fu_ds_DoivienResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
   </Function>
   <Function Name="dbo.fu_DS_DoivienTheoKDV" Method="fu_DS_DoivienTheoKDV" IsComposable="true">
     <Parameter Name="KhoaDv" Parameter="khoaDv" Type="System.String" DbType="NVarChar(10)" />
     <ElementType Name="fu_DS_DoivienTheoKDVResult">
-      <Column Name="MSSV" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
       <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
       <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="Quequan" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="Nganh" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="Khoa" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
-      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Khoa" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_Ds_KhoVatDung" Method="fu_Ds_KhoVatDung" IsComposable="true">
+    <ElementType Name="fu_Ds_KhoVatDungResult">
+      <Column Name="Ma_VD" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="TenVD" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Donvi" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Column Name="Soluong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_Ds_Nhiemki" Method="fu_Ds_Nhiemki" IsComposable="true">
+    <ElementType Name="fu_Ds_NhiemkiResult">
+      <Column Name="NhiemKy" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_DS_SVthamgiaCT" Method="fu_DS_SVthamgiaCT" IsComposable="true">
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(10)" />
+    <ElementType Name="fu_DS_SVthamgiaCTResult">
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="DiemCTXH" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Danhgia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_Ds_TaiKhoan" Method="fu_Ds_TaiKhoan" IsComposable="true">
+    <ElementType Name="fu_Ds_TaiKhoanResult">
+      <Column Name="Username" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Administrator" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="BanDieuHanh" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_LayKhoaDV" Method="fu_LayKhoaDV" IsComposable="true">
+    <Parameter Name="now" Type="System.DateTime" DbType="Date" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.fu_LayTenCT" Method="fu_LayTenCT" IsComposable="true">
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.fu_LayVaiTro" Method="fu_LayVaiTro" IsComposable="true">
+    <Parameter Name="user" Type="System.String" DbType="NVarChar(50)" />
+    <Return Type="System.Boolean" />
+  </Function>
+  <Function Name="dbo.fu_Loc_CTV" Method="fu_Loc_CTV" IsComposable="true">
+    <Parameter Name="Namsinh" Parameter="namsinh" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaKhoa" Parameter="maKhoa" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="fu_Loc_CTVResult">
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenKhoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_Loc_DoiVien" Method="fu_Loc_DoiVien" IsComposable="true">
+    <Parameter Name="Namsinh" Parameter="namsinh" Type="System.Int32" DbType="Int" />
+    <Parameter Name="MaKhoa" Parameter="maKhoa" Type="System.String" DbType="NVarChar(15)" />
+    <Parameter Name="MaKhoaDV" Parameter="maKhoaDV" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="fu_Loc_DoiVienResult">
+      <Column Name="MaSV" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TenKhoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_LocCTV_TheoKhoaDaoTao" Method="fu_LocCTV_TheoKhoaDaoTao" IsComposable="true">
+    <Parameter Name="Ma_Khoa" Parameter="ma_Khoa" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="fu_LocCTV_TheoKhoaDaoTaoResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_LocCTV_TheoNamSinh" Method="fu_LocCTV_TheoNamSinh" IsComposable="true">
+    <Parameter Name="namsinh" Type="System.Int32" DbType="Int" />
+    <ElementType Name="fu_LocCTV_TheoNamSinhResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_LocDV_TheoKhoaDV" Method="fu_LocDV_TheoKhoaDV" IsComposable="true">
+    <Parameter Name="Ma_Khoa" Parameter="ma_Khoa" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="fu_LocDV_TheoKhoaDVResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_LocDV_TheoKhoahoc" Method="fu_LocDV_TheoKhoahoc" IsComposable="true">
+    <Parameter Name="Ma_Khoa" Parameter="ma_Khoa" Type="System.String" DbType="NVarChar(15)" />
+    <ElementType Name="fu_LocDV_TheoKhoahocResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_LocDV_TheoNamsinh" Method="fu_LocDV_TheoNamsinh" IsComposable="true">
+    <Parameter Name="namsinh" Type="System.Int32" DbType="Int" />
+    <ElementType Name="fu_LocDV_TheoNamsinhResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="KhoaDV" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.fu_ngayKetnap" Method="fu_ngayKetnap" IsComposable="true">
+    <Parameter Name="KhoaDV" Parameter="khoaDV" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.String" />
+  </Function>
+  <Function Name="dbo.fu_SL_ThamgiaCT" Method="fu_SL_ThamgiaCT" IsComposable="true">
+    <Parameter Name="MaCT" Parameter="maCT" Type="System.String" DbType="NVarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.fu_TimKiemCTV_TheoTen" Method="fu_TimKiemCTV_TheoTen" IsComposable="true">
+    <Parameter Name="Ho_ten" Parameter="ho_ten" Type="System.String" DbType="NVarChar(50)" />
+    <ElementType Name="fu_TimKiemCTV_TheoTenResult">
+      <Column Name="Ma_SV" Type="System.String" DbType="NVarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="Hoten" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ngaysinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Quequan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Ten_Khoa" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Nganh" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
     </ElementType>
   </Function>
 </Database>

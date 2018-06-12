@@ -1,0 +1,67 @@
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\DoAnCNPM.exe.config
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\DoAnCNPM.exe
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\DoAnCNPM.pdb
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\EPPlus.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.DataSet.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\LinqToExcel.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\Remotion.Data.Linq.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\Remotion.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\Remotion.Interfaces.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\WebDriver.dll
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\EPPlus.xml
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.xml
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.DataSet.xml
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\LinqToExcel.xml
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\bin\Release\WebDriver.xml
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormBanDieuHanh.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormChuongTrinh.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormCongTacVien.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormCover.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormDangNhap.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormDoiVien.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormDsThamGiaChuongTrinh.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormMain.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormPhanQuyen.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormQuanLyKho.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormTheDoiVien.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.Properties.Resources.resources
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.csproj.GenerateResource.Cache
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.exe.licenses
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.csproj.CoreCompileInputs.cache
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.exe
+D:\Study\Visual workspace\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.pdb
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\DoAnCNPM.exe.config
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\DoAnCNPM.exe
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\DoAnCNPM.pdb
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\EPPlus.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.DataSet.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\LinqToExcel.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\Remotion.Data.Linq.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\Remotion.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\Remotion.Interfaces.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\WebDriver.dll
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\EPPlus.xml
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.xml
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\ExcelDataReader.DataSet.xml
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\LinqToExcel.xml
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\bin\Release\WebDriver.xml
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.csprojResolveAssemblyReference.cache
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormBanDieuHanh.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormChuongTrinh.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormCongTacVien.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormCover.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormDangNhap.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormDoiVien.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormDsThamGiaChuongTrinh.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormMain.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormPhanQuyen.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormQuanLyKho.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.LopGiaoDien.FormTheDoiVien.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.Properties.Resources.resources
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.csproj.GenerateResource.Cache
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.exe.licenses
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.csproj.CoreCompileInputs.cache
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.exe
+D:\Study\BAO CAO DO AN CNPM\CODE\DoANCuoiKy\DoAnCNPM\obj\Release\DoAnCNPM.pdb

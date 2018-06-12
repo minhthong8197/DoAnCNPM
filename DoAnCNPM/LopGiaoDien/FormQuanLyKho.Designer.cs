@@ -115,6 +115,8 @@
             this.dgvMain.Name = "dgvMain";
             this.dgvMain.Size = new System.Drawing.Size(1022, 382);
             this.dgvMain.TabIndex = 1;
+            this.dgvMain.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMain_CellClick);
+            this.dgvMain.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             // 
             // pnlTop
             // 
@@ -161,11 +163,11 @@
             this.pnlMaVD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlMaVD.Controls.Add(this.lblMaVD, 0, 0);
             this.pnlMaVD.Controls.Add(this.txtMaVD, 1, 0);
-            this.pnlMaVD.Location = new System.Drawing.Point(9, 20);
+            this.pnlMaVD.Location = new System.Drawing.Point(9, 17);
             this.pnlMaVD.Name = "pnlMaVD";
             this.pnlMaVD.RowCount = 1;
             this.pnlMaVD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlMaVD.Size = new System.Drawing.Size(316, 24);
+            this.pnlMaVD.Size = new System.Drawing.Size(316, 30);
             this.pnlMaVD.TabIndex = 2;
             // 
             // lblMaVD
@@ -176,7 +178,7 @@
             this.lblMaVD.ForeColor = System.Drawing.Color.White;
             this.lblMaVD.Location = new System.Drawing.Point(3, 0);
             this.lblMaVD.Name = "lblMaVD";
-            this.lblMaVD.Size = new System.Drawing.Size(117, 24);
+            this.lblMaVD.Size = new System.Drawing.Size(117, 30);
             this.lblMaVD.TabIndex = 0;
             this.lblMaVD.Text = "Mã vật dụng";
             this.lblMaVD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -184,10 +186,11 @@
             // txtMaVD
             // 
             this.txtMaVD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaVD.Location = new System.Drawing.Point(123, 2);
+            this.txtMaVD.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtMaVD.Location = new System.Drawing.Point(123, 0);
             this.txtMaVD.Margin = new System.Windows.Forms.Padding(0);
             this.txtMaVD.Name = "txtMaVD";
-            this.txtMaVD.Size = new System.Drawing.Size(193, 20);
+            this.txtMaVD.Size = new System.Drawing.Size(193, 30);
             this.txtMaVD.TabIndex = 1;
             // 
             // pnlTenVD
@@ -200,11 +203,11 @@
             this.pnlTenVD.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlTenVD.Controls.Add(this.lblTenVD, 0, 0);
             this.pnlTenVD.Controls.Add(this.txtTenVD, 1, 0);
-            this.pnlTenVD.Location = new System.Drawing.Point(9, 84);
+            this.pnlTenVD.Location = new System.Drawing.Point(9, 81);
             this.pnlTenVD.Name = "pnlTenVD";
             this.pnlTenVD.RowCount = 1;
             this.pnlTenVD.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlTenVD.Size = new System.Drawing.Size(315, 24);
+            this.pnlTenVD.Size = new System.Drawing.Size(315, 30);
             this.pnlTenVD.TabIndex = 2;
             // 
             // lblTenVD
@@ -215,7 +218,7 @@
             this.lblTenVD.ForeColor = System.Drawing.Color.White;
             this.lblTenVD.Location = new System.Drawing.Point(3, 0);
             this.lblTenVD.Name = "lblTenVD";
-            this.lblTenVD.Size = new System.Drawing.Size(123, 24);
+            this.lblTenVD.Size = new System.Drawing.Size(123, 30);
             this.lblTenVD.TabIndex = 0;
             this.lblTenVD.Text = "Tên vật dụng";
             this.lblTenVD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -223,10 +226,11 @@
             // txtTenVD
             // 
             this.txtTenVD.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTenVD.Location = new System.Drawing.Point(129, 2);
+            this.txtTenVD.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtTenVD.Location = new System.Drawing.Point(129, 0);
             this.txtTenVD.Margin = new System.Windows.Forms.Padding(0);
             this.txtTenVD.Name = "txtTenVD";
-            this.txtTenVD.Size = new System.Drawing.Size(186, 20);
+            this.txtTenVD.Size = new System.Drawing.Size(186, 30);
             this.txtTenVD.TabIndex = 1;
             // 
             // pnlSoLuong
@@ -280,11 +284,11 @@
             this.pnlDonVi.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.pnlDonVi.Controls.Add(this.lblDonVi, 0, 0);
             this.pnlDonVi.Controls.Add(this.txtDonVi, 1, 0);
-            this.pnlDonVi.Location = new System.Drawing.Point(9, 213);
+            this.pnlDonVi.Location = new System.Drawing.Point(9, 210);
             this.pnlDonVi.Name = "pnlDonVi";
             this.pnlDonVi.RowCount = 1;
             this.pnlDonVi.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.pnlDonVi.Size = new System.Drawing.Size(316, 24);
+            this.pnlDonVi.Size = new System.Drawing.Size(316, 30);
             this.pnlDonVi.TabIndex = 2;
             // 
             // lblDonVi
@@ -295,7 +299,7 @@
             this.lblDonVi.ForeColor = System.Drawing.Color.White;
             this.lblDonVi.Location = new System.Drawing.Point(3, 0);
             this.lblDonVi.Name = "lblDonVi";
-            this.lblDonVi.Size = new System.Drawing.Size(65, 24);
+            this.lblDonVi.Size = new System.Drawing.Size(65, 30);
             this.lblDonVi.TabIndex = 0;
             this.lblDonVi.Text = "Đơn vị";
             this.lblDonVi.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -303,10 +307,11 @@
             // txtDonVi
             // 
             this.txtDonVi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtDonVi.Location = new System.Drawing.Point(71, 2);
+            this.txtDonVi.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.txtDonVi.Location = new System.Drawing.Point(71, 0);
             this.txtDonVi.Margin = new System.Windows.Forms.Padding(0);
             this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(245, 20);
+            this.txtDonVi.Size = new System.Drawing.Size(245, 30);
             this.txtDonVi.TabIndex = 1;
             // 
             // pnlManageTools
@@ -350,6 +355,7 @@
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnHuy
             // 
@@ -370,6 +376,7 @@
             this.btnHuy.Text = "Hủy";
             this.btnHuy.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // btnLuu
             // 
@@ -390,6 +397,7 @@
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnCapNhat
             // 
@@ -410,6 +418,7 @@
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCapNhat.UseVisualStyleBackColor = false;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnThem
             // 
@@ -430,6 +439,7 @@
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // FormQuanLyKho
             // 
@@ -439,6 +449,7 @@
             this.Controls.Add(this.pnlPhanQuyen);
             this.Name = "FormQuanLyKho";
             this.Size = new System.Drawing.Size(1028, 688);
+            this.Load += new System.EventHandler(this.FormQuanLyKho_Load);
             this.pnlPhanQuyen.ResumeLayout(false);
             this.pnlFooter.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMain)).EndInit();

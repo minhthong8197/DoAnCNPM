@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.pnlBorderTop = new System.Windows.Forms.Panel();
             this.pnlBorderLeft = new System.Windows.Forms.Panel();
             this.pnlBorderRight = new System.Windows.Forms.Panel();
@@ -41,15 +42,11 @@
             this.pnlListMenu = new System.Windows.Forms.Panel();
             this.pnlGioiThieu = new System.Windows.Forms.Panel();
             this.pnlListGioiThieu = new System.Windows.Forms.Panel();
-            this.pnlLichSu = new System.Windows.Forms.Panel();
-            this.btnLichSu = new System.Windows.Forms.Button();
             this.btnGioiThieu = new System.Windows.Forms.Button();
             this.pnlDoiTruong = new System.Windows.Forms.Panel();
             this.pnlListDoiTruong = new System.Windows.Forms.Panel();
             this.pnlPhanQuyen = new System.Windows.Forms.Panel();
             this.btnPhanQuyen = new System.Windows.Forms.Button();
-            this.pnlKetNap = new System.Windows.Forms.Panel();
-            this.btnKetNap = new System.Windows.Forms.Button();
             this.btnDoiTruong = new System.Windows.Forms.Button();
             this.pnlQuanLyKho = new System.Windows.Forms.Panel();
             this.pnlListQuanLyKho = new System.Windows.Forms.Panel();
@@ -58,6 +55,8 @@
             this.btnQuanLyKho = new System.Windows.Forms.Button();
             this.pnlChuongTrinh = new System.Windows.Forms.Panel();
             this.pnlListChuongTrinh = new System.Windows.Forms.Panel();
+            this.pnlDsThamGia = new System.Windows.Forms.Panel();
+            this.btnDsThamGia = new System.Windows.Forms.Button();
             this.pnlDsChuongTrinh = new System.Windows.Forms.Panel();
             this.btnDsChuongTrinh = new System.Windows.Forms.Button();
             this.btnChuongTrinh = new System.Windows.Forms.Button();
@@ -86,17 +85,15 @@
             this.pnlLeft.SuspendLayout();
             this.pnlListMenu.SuspendLayout();
             this.pnlGioiThieu.SuspendLayout();
-            this.pnlListGioiThieu.SuspendLayout();
-            this.pnlLichSu.SuspendLayout();
             this.pnlDoiTruong.SuspendLayout();
             this.pnlListDoiTruong.SuspendLayout();
             this.pnlPhanQuyen.SuspendLayout();
-            this.pnlKetNap.SuspendLayout();
             this.pnlQuanLyKho.SuspendLayout();
             this.pnlListQuanLyKho.SuspendLayout();
             this.pnlVatDung.SuspendLayout();
             this.pnlChuongTrinh.SuspendLayout();
             this.pnlListChuongTrinh.SuspendLayout();
+            this.pnlDsThamGia.SuspendLayout();
             this.pnlDsChuongTrinh.SuspendLayout();
             this.pnlThanhVien.SuspendLayout();
             this.pnlListThanhVien.SuspendLayout();
@@ -256,52 +253,19 @@
             this.pnlGioiThieu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlGioiThieu.Location = new System.Drawing.Point(0, 410);
             this.pnlGioiThieu.Name = "pnlGioiThieu";
-            this.pnlGioiThieu.Size = new System.Drawing.Size(274, 80);
+            this.pnlGioiThieu.Size = new System.Drawing.Size(274, 50);
             this.pnlGioiThieu.TabIndex = 4;
             // 
             // pnlListGioiThieu
             // 
             this.pnlListGioiThieu.AutoSize = true;
-            this.pnlListGioiThieu.Controls.Add(this.pnlLichSu);
             this.pnlListGioiThieu.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlListGioiThieu.Location = new System.Drawing.Point(0, 50);
             this.pnlListGioiThieu.Margin = new System.Windows.Forms.Padding(0);
             this.pnlListGioiThieu.Name = "pnlListGioiThieu";
-            this.pnlListGioiThieu.Size = new System.Drawing.Size(274, 30);
+            this.pnlListGioiThieu.Size = new System.Drawing.Size(274, 0);
             this.pnlListGioiThieu.TabIndex = 8;
             this.pnlListGioiThieu.Visible = false;
-            // 
-            // pnlLichSu
-            // 
-            this.pnlLichSu.AutoSize = true;
-            this.pnlLichSu.Controls.Add(this.btnLichSu);
-            this.pnlLichSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlLichSu.Location = new System.Drawing.Point(0, 0);
-            this.pnlLichSu.Name = "pnlLichSu";
-            this.pnlLichSu.Size = new System.Drawing.Size(274, 30);
-            this.pnlLichSu.TabIndex = 0;
-            // 
-            // btnLichSu
-            // 
-            this.btnLichSu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLichSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnLichSu.FlatAppearance.BorderSize = 0;
-            this.btnLichSu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnLichSu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnLichSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLichSu.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLichSu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnLichSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSu.Location = new System.Drawing.Point(0, 0);
-            this.btnLichSu.Margin = new System.Windows.Forms.Padding(0);
-            this.btnLichSu.Name = "btnLichSu";
-            this.btnLichSu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnLichSu.Size = new System.Drawing.Size(274, 30);
-            this.btnLichSu.TabIndex = 1;
-            this.btnLichSu.Text = "LS       Lịch sử hình thành";
-            this.btnLichSu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLichSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnLichSu.UseVisualStyleBackColor = true;
             // 
             // btnGioiThieu
             // 
@@ -311,7 +275,7 @@
             this.btnGioiThieu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnGioiThieu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnGioiThieu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGioiThieu.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnGioiThieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnGioiThieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnGioiThieu.Image = global::DoAnCNPM.Properties.Resources.icon_info1;
             this.btnGioiThieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -321,7 +285,7 @@
             this.btnGioiThieu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnGioiThieu.Size = new System.Drawing.Size(274, 50);
             this.btnGioiThieu.TabIndex = 5;
-            this.btnGioiThieu.Text = "     Giới thiệu";
+            this.btnGioiThieu.Text = "     Trợ Giúp";
             this.btnGioiThieu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGioiThieu.UseVisualStyleBackColor = true;
             this.btnGioiThieu.Click += new System.EventHandler(this.btnGioiThieu_Click);
@@ -332,21 +296,20 @@
             this.pnlDoiTruong.Controls.Add(this.pnlListDoiTruong);
             this.pnlDoiTruong.Controls.Add(this.btnDoiTruong);
             this.pnlDoiTruong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlDoiTruong.Location = new System.Drawing.Point(0, 300);
+            this.pnlDoiTruong.Location = new System.Drawing.Point(0, 330);
             this.pnlDoiTruong.Name = "pnlDoiTruong";
-            this.pnlDoiTruong.Size = new System.Drawing.Size(274, 110);
+            this.pnlDoiTruong.Size = new System.Drawing.Size(274, 80);
             this.pnlDoiTruong.TabIndex = 3;
             // 
             // pnlListDoiTruong
             // 
             this.pnlListDoiTruong.AutoSize = true;
             this.pnlListDoiTruong.Controls.Add(this.pnlPhanQuyen);
-            this.pnlListDoiTruong.Controls.Add(this.pnlKetNap);
             this.pnlListDoiTruong.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlListDoiTruong.Location = new System.Drawing.Point(0, 50);
             this.pnlListDoiTruong.Margin = new System.Windows.Forms.Padding(0);
             this.pnlListDoiTruong.Name = "pnlListDoiTruong";
-            this.pnlListDoiTruong.Size = new System.Drawing.Size(274, 60);
+            this.pnlListDoiTruong.Size = new System.Drawing.Size(274, 30);
             this.pnlListDoiTruong.TabIndex = 7;
             this.pnlListDoiTruong.Visible = false;
             // 
@@ -355,7 +318,7 @@
             this.pnlPhanQuyen.AutoSize = true;
             this.pnlPhanQuyen.Controls.Add(this.btnPhanQuyen);
             this.pnlPhanQuyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlPhanQuyen.Location = new System.Drawing.Point(0, 30);
+            this.pnlPhanQuyen.Location = new System.Drawing.Point(0, 0);
             this.pnlPhanQuyen.Name = "pnlPhanQuyen";
             this.pnlPhanQuyen.Size = new System.Drawing.Size(274, 30);
             this.pnlPhanQuyen.TabIndex = 8;
@@ -368,7 +331,7 @@
             this.btnPhanQuyen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnPhanQuyen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnPhanQuyen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhanQuyen.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhanQuyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhanQuyen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnPhanQuyen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhanQuyen.Location = new System.Drawing.Point(0, 0);
@@ -383,37 +346,6 @@
             this.btnPhanQuyen.UseVisualStyleBackColor = true;
             this.btnPhanQuyen.Click += new System.EventHandler(this.btnPhanQuyen_Click);
             // 
-            // pnlKetNap
-            // 
-            this.pnlKetNap.Controls.Add(this.btnKetNap);
-            this.pnlKetNap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlKetNap.Location = new System.Drawing.Point(0, 0);
-            this.pnlKetNap.Name = "pnlKetNap";
-            this.pnlKetNap.Size = new System.Drawing.Size(274, 30);
-            this.pnlKetNap.TabIndex = 1;
-            // 
-            // btnKetNap
-            // 
-            this.btnKetNap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnKetNap.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnKetNap.FlatAppearance.BorderSize = 0;
-            this.btnKetNap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
-            this.btnKetNap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
-            this.btnKetNap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKetNap.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKetNap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnKetNap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKetNap.Location = new System.Drawing.Point(0, 0);
-            this.btnKetNap.Margin = new System.Windows.Forms.Padding(0);
-            this.btnKetNap.Name = "btnKetNap";
-            this.btnKetNap.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnKetNap.Size = new System.Drawing.Size(274, 30);
-            this.btnKetNap.TabIndex = 2;
-            this.btnKetNap.Text = "LS        Cập nhật lịch sử";
-            this.btnKetNap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKetNap.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnKetNap.UseVisualStyleBackColor = true;
-            // 
             // btnDoiTruong
             // 
             this.btnDoiTruong.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -422,7 +354,7 @@
             this.btnDoiTruong.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnDoiTruong.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnDoiTruong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiTruong.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnDoiTruong.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnDoiTruong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDoiTruong.Image = global::DoAnCNPM.Properties.Resources.icon_leader1;
             this.btnDoiTruong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -443,7 +375,7 @@
             this.pnlQuanLyKho.Controls.Add(this.pnlListQuanLyKho);
             this.pnlQuanLyKho.Controls.Add(this.btnQuanLyKho);
             this.pnlQuanLyKho.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlQuanLyKho.Location = new System.Drawing.Point(0, 220);
+            this.pnlQuanLyKho.Location = new System.Drawing.Point(0, 250);
             this.pnlQuanLyKho.Name = "pnlQuanLyKho";
             this.pnlQuanLyKho.Size = new System.Drawing.Size(274, 80);
             this.pnlQuanLyKho.TabIndex = 2;
@@ -478,7 +410,7 @@
             this.btnVatDung.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnVatDung.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnVatDung.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVatDung.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVatDung.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVatDung.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnVatDung.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVatDung.Location = new System.Drawing.Point(0, 0);
@@ -501,7 +433,7 @@
             this.btnQuanLyKho.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnQuanLyKho.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnQuanLyKho.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQuanLyKho.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnQuanLyKho.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnQuanLyKho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnQuanLyKho.Image = global::DoAnCNPM.Properties.Resources.icon_warehouse1;
             this.btnQuanLyKho.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,20 +456,54 @@
             this.pnlChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlChuongTrinh.Location = new System.Drawing.Point(0, 140);
             this.pnlChuongTrinh.Name = "pnlChuongTrinh";
-            this.pnlChuongTrinh.Size = new System.Drawing.Size(274, 80);
+            this.pnlChuongTrinh.Size = new System.Drawing.Size(274, 110);
             this.pnlChuongTrinh.TabIndex = 1;
             // 
             // pnlListChuongTrinh
             // 
             this.pnlListChuongTrinh.AutoSize = true;
+            this.pnlListChuongTrinh.Controls.Add(this.pnlDsThamGia);
             this.pnlListChuongTrinh.Controls.Add(this.pnlDsChuongTrinh);
             this.pnlListChuongTrinh.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlListChuongTrinh.Location = new System.Drawing.Point(0, 50);
             this.pnlListChuongTrinh.Margin = new System.Windows.Forms.Padding(0);
             this.pnlListChuongTrinh.Name = "pnlListChuongTrinh";
-            this.pnlListChuongTrinh.Size = new System.Drawing.Size(274, 30);
+            this.pnlListChuongTrinh.Size = new System.Drawing.Size(274, 60);
             this.pnlListChuongTrinh.TabIndex = 9;
             this.pnlListChuongTrinh.Visible = false;
+            // 
+            // pnlDsThamGia
+            // 
+            this.pnlDsThamGia.AutoSize = true;
+            this.pnlDsThamGia.Controls.Add(this.btnDsThamGia);
+            this.pnlDsThamGia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlDsThamGia.Location = new System.Drawing.Point(0, 30);
+            this.pnlDsThamGia.Name = "pnlDsThamGia";
+            this.pnlDsThamGia.Size = new System.Drawing.Size(274, 30);
+            this.pnlDsThamGia.TabIndex = 1;
+            // 
+            // btnDsThamGia
+            // 
+            this.btnDsThamGia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDsThamGia.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDsThamGia.FlatAppearance.BorderSize = 0;
+            this.btnDsThamGia.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
+            this.btnDsThamGia.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
+            this.btnDsThamGia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDsThamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDsThamGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDsThamGia.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDsThamGia.Location = new System.Drawing.Point(0, 0);
+            this.btnDsThamGia.Margin = new System.Windows.Forms.Padding(0);
+            this.btnDsThamGia.Name = "btnDsThamGia";
+            this.btnDsThamGia.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnDsThamGia.Size = new System.Drawing.Size(274, 30);
+            this.btnDsThamGia.TabIndex = 1;
+            this.btnDsThamGia.Text = "DS       Danh sách tham gia";
+            this.btnDsThamGia.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDsThamGia.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDsThamGia.UseVisualStyleBackColor = true;
+            this.btnDsThamGia.Click += new System.EventHandler(this.btnDsThamGia_Click);
             // 
             // pnlDsChuongTrinh
             // 
@@ -557,7 +523,7 @@
             this.btnDsChuongTrinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnDsChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnDsChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDsChuongTrinh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDsChuongTrinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDsChuongTrinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDsChuongTrinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDsChuongTrinh.Location = new System.Drawing.Point(0, 0);
@@ -580,7 +546,7 @@
             this.btnChuongTrinh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnChuongTrinh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnChuongTrinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnChuongTrinh.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnChuongTrinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnChuongTrinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnChuongTrinh.Image = global::DoAnCNPM.Properties.Resources.icon_event1;
             this.btnChuongTrinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -636,7 +602,7 @@
             this.btnBanDieuHanh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnBanDieuHanh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnBanDieuHanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBanDieuHanh.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBanDieuHanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBanDieuHanh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnBanDieuHanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBanDieuHanh.Location = new System.Drawing.Point(0, 0);
@@ -668,7 +634,7 @@
             this.btnCongTacVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnCongTacVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnCongTacVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCongTacVien.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCongTacVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCongTacVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnCongTacVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCongTacVien.Location = new System.Drawing.Point(0, 0);
@@ -701,7 +667,7 @@
             this.btnDoiVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnDoiVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnDoiVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDoiVien.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDoiVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoiVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnDoiVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoiVien.Location = new System.Drawing.Point(0, 0);
@@ -724,7 +690,7 @@
             this.btnThanhVien.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Purple;
             this.btnThanhVien.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Purple;
             this.btnThanhVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThanhVien.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.btnThanhVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.btnThanhVien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnThanhVien.Image = global::DoAnCNPM.Properties.Resources.icon_member1;
             this.btnThanhVien.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -772,7 +738,7 @@
             // lblTeamName
             // 
             this.lblTeamName.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTeamName.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblTeamName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.lblTeamName.ForeColor = System.Drawing.Color.White;
             this.lblTeamName.Location = new System.Drawing.Point(0, 0);
             this.lblTeamName.Name = "lblTeamName";
@@ -784,7 +750,7 @@
             // lblUniversity
             // 
             this.lblUniversity.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblUniversity.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUniversity.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUniversity.ForeColor = System.Drawing.Color.White;
             this.lblUniversity.Location = new System.Drawing.Point(0, 23);
             this.lblUniversity.Name = "lblUniversity";
@@ -864,6 +830,7 @@
             this.Controls.Add(this.pnlBorderTop);
             this.Controls.Add(this.pnlBorderBottom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMain";
@@ -876,15 +843,11 @@
             this.pnlListMenu.PerformLayout();
             this.pnlGioiThieu.ResumeLayout(false);
             this.pnlGioiThieu.PerformLayout();
-            this.pnlListGioiThieu.ResumeLayout(false);
-            this.pnlListGioiThieu.PerformLayout();
-            this.pnlLichSu.ResumeLayout(false);
             this.pnlDoiTruong.ResumeLayout(false);
             this.pnlDoiTruong.PerformLayout();
             this.pnlListDoiTruong.ResumeLayout(false);
             this.pnlListDoiTruong.PerformLayout();
             this.pnlPhanQuyen.ResumeLayout(false);
-            this.pnlKetNap.ResumeLayout(false);
             this.pnlQuanLyKho.ResumeLayout(false);
             this.pnlQuanLyKho.PerformLayout();
             this.pnlListQuanLyKho.ResumeLayout(false);
@@ -894,6 +857,7 @@
             this.pnlChuongTrinh.PerformLayout();
             this.pnlListChuongTrinh.ResumeLayout(false);
             this.pnlListChuongTrinh.PerformLayout();
+            this.pnlDsThamGia.ResumeLayout(false);
             this.pnlDsChuongTrinh.ResumeLayout(false);
             this.pnlThanhVien.ResumeLayout(false);
             this.pnlListThanhVien.ResumeLayout(false);
@@ -948,11 +912,7 @@
         private System.Windows.Forms.Button btnCongTacVien;
         private System.Windows.Forms.Button btnDoiVien;
         private System.Windows.Forms.Panel pnlListGioiThieu;
-        private System.Windows.Forms.Panel pnlLichSu;
-        private System.Windows.Forms.Button btnLichSu;
         private System.Windows.Forms.Panel pnlListDoiTruong;
-        private System.Windows.Forms.Panel pnlKetNap;
-        private System.Windows.Forms.Button btnKetNap;
         private System.Windows.Forms.Panel pnlListQuanLyKho;
         private System.Windows.Forms.Panel pnlVatDung;
         private System.Windows.Forms.Button btnVatDung;
@@ -964,5 +924,7 @@
         private System.Windows.Forms.Panel pnlDoiVien;
         private System.Windows.Forms.Panel pnlPhanQuyen;
         private System.Windows.Forms.Button btnPhanQuyen;
+        private System.Windows.Forms.Panel pnlDsThamGia;
+        private System.Windows.Forms.Button btnDsThamGia;
     }
 }
